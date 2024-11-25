@@ -8,7 +8,7 @@ export default async function Home() {
     id: "test",
   });
   return (
-    <div>
+    <div className='w-full '>
       <MarkdownView contentHtml={data.content} />
     </div>
   );

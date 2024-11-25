@@ -7,7 +7,7 @@ import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export default function MarkdownView({ contentHtml }: { contentHtml: string }) {
   return (
-    <div className='w-full prose'>
+    <div className='w-full prose mx-auto'>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
