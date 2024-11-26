@@ -23,9 +23,9 @@ export default function Profile() {
           {Object.entries(link).map(([name, href]) => (
             <Link href={href} key={name}>
               {name === "github" ? (
-                <FaGithub size={20} />
+                <FaGithub size={28} />
               ) : (
-                <RiNotionFill size={20} />
+                <RiNotionFill size={30} />
               )}
             </Link>
           ))}

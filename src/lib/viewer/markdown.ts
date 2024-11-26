@@ -2,7 +2,7 @@ import matter from "gray-matter";
 import path from "path";
 import fs from "fs";
 
-export async function GetMarkdown({
+export function GetMarkdown({
   directory,
   id,
 }: {
