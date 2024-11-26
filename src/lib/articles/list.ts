@@ -54,5 +54,5 @@ export function getAllArtclesPath() {
 export function getArticleDescription(content: string) {
   const contentLength = 200;
   const description = RemoveMarkdown(content).slice(0, contentLength);
-  return description + "...";
+  return description;
 }
