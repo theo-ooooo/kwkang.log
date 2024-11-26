@@ -1,7 +1,7 @@
 ---
-title: "test"
-date: "2024-01-01"
-tag: "test"
+title: "Next.js App Router 정리"
+date: "2024-11-26"
+tag: "react, next.js"
 ---
 
 Next.js의 **App Router**는 13버전부터 도입된 새로운 라우팅 방식으로, 기존의 **Pages Router**보다 더 현대적이고 유연한 기능을 제공합니다. App Router를 통해 서버 컴포넌트와 클라이언트 컴포넌트를 효과적으로 관리하며 React 18의 기능을 최대한 활용할 수 있습니다. 아래는 App Router의 주요 개념과 특징, 활용법을 정리한 내용입니다.

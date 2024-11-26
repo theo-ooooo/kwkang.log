@@ -20,6 +20,7 @@ export function GetMarkdown({
       title: matterResult.data.title,
       date: matterResult.data.date,
       content: matterResult.content,
+      tags: (matterResult.data.tag as string).split(","),
     };
   } catch (e) {
     throw e;
