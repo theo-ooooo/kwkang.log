@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-export default function error() {
+export default function Error() {
   const router = useRouter();
   return (
     <div className='flex py-3 flex-col gap-4 justify-center items-center w-full h-svh'>
