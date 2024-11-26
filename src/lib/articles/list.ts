@@ -1,6 +1,7 @@
 import { ARTICLE_DIRECTORY } from "@/constants/directories";
 import fs from "fs";
 import RemoveMarkdown from "remove-markdown";
+import _ from "lodash";
 
 import { GetMarkdown } from "../viewer/markdown";
 import { Article } from "@/types/article";
@@ -36,7 +37,7 @@ export function getAllArtclesPath() {
 
   const paths = getArticles.map((article) => {
     if (!article.route) {
-      return { parmas: {} };
+      return null;
     }
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_, __, directory, fileName] = article.route.split("/");
@@ -47,7 +48,7 @@ export function getAllArtclesPath() {
       params: { id, directory },
     };
   });
-  return paths;
+  return _.compact(paths);
 }
 
 export function getArticleDescription(content: string) {

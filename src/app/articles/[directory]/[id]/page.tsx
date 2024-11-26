@@ -4,6 +4,8 @@ import { ARTICLE_DIRECTORY } from "@/constants/directories";
 import { getAllArtclesPath, getArticleDescription } from "@/lib/articles/list";
 import { GetMarkdown } from "@/lib/viewer/markdown";
 
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   const paths = getAllArtclesPath();
 
