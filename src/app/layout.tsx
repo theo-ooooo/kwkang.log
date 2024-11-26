@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
+import TopButton from "@/components/common/Top";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header />
         <main className='flex max-w-[768px] mx-auto px-2'>{children}</main>
         <Footer />
+        <TopButton />
       </body>
     </html>
   );
