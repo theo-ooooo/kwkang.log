@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   },
   description: "Theo의 개발 블로그 입니다.",
   openGraph: {
-    // title: article.title,
+    title: "Theo.log",
+    description: "Theo의 개발 블로그 입니다.",
+    url: "https://kwkang.net",
     images: [
       {
         url: `/api/og`,

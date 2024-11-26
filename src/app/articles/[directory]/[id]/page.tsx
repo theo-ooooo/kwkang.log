@@ -27,9 +27,11 @@ export async function generateMetadata({
 
   return {
     title: article.title,
-    description: description,
+    description,
     openGraph: {
       title: article.title,
+      description,
+      url: `https://kwkang.net/articles/${directory}/${id}`,
       images: [
         {
           url: `/api/og?title=${article.title}`,
