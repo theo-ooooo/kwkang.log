@@ -28,6 +28,17 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: description,
+    openGraph: {
+      title: article.title,
+      images: [
+        {
+          url: `/api/og?title=${article.title}`,
+          width: 1200,
+          height: 630,
+          alt: id,
+        },
+      ],
+    },
   };
 }
 

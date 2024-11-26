@@ -7,9 +7,20 @@ import TopButton from "@/components/common/Top";
 export const metadata: Metadata = {
   title: {
     template: "%s | Theo.log",
-    default: '"Theo.log"',
+    default: "Theo.log",
   },
   description: "Theo의 개발 블로그 입니다.",
+  openGraph: {
+    // title: article.title,
+    images: [
+      {
+        url: `/api/og`,
+        width: 1200,
+        height: 630,
+        alt: "theo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
