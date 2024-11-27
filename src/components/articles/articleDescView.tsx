@@ -9,8 +9,10 @@ export default function ArticleDescView({ article }: { article: Article }) {
           {article.title}
         </h2>
         <div className='flex justify-between gap-3'>
-          <div className='text-sm text-zinc-400'>{article.date}</div>
-          <div className='flex gap-2 text-sm text-zinc-400'>
+          <div className='text-sm text-zinc-400 dark:text-zinc-300'>
+            {article.date}
+          </div>
+          <div className='flex gap-2 text-sm text-zinc-400 dark:text-zinc-300'>
             {article.tags.map((tag) => {
               return (
                 <span key={tag} className={`text-xs font-semibold rounded`}>

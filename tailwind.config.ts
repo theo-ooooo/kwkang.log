@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
+import color from "tailwindcss/colors";
 
 export default {
   content: [
@@ -16,4 +17,5 @@ export default {
     },
   },
   plugins: [typography],
+  darkMode: ["class"],
 } satisfies Config;

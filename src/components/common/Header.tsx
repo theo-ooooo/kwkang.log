@@ -1,12 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
+import { Suspense } from "react";
 
 export default function Header() {
   return (
-    <div className='flex  p-3 max-w-[768px] sticky mx-auto top-0 bg-white'>
+    <div className='flex justify-between  p-3 max-w-[768px] sticky mx-auto top-0 bg-white dark:bg-black'>
       <Link href={"/"} className='font-bold text-lg underline'>
         <Image src={"/images/logo.png"} width={38} height={38} alt='logo' />
       </Link>
+      <Suspense fallback={<div>...</div>}>
+        <ThemeToggle />
+      </Suspense>
     </div>
   );
 }

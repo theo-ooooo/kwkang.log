@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import TopButton from "@/components/common/Top";
+import ThemeProvider from "@/components/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -31,12 +32,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ko'>
+    <html lang='ko' suppressHydrationWarning>
       <body>
-        <Header />
-        <main className='flex max-w-[768px] mx-auto px-2'>{children}</main>
-        <Footer />
-        <TopButton />
+        <ThemeProvider>
+          <Header />
+          <main className='flex max-w-[768px] mx-auto px-2'>{children}</main>
+          <Footer />
+          <TopButton />
+        </ThemeProvider>
       </body>
     </html>
   );
