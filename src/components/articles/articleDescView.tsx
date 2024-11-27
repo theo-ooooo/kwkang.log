@@ -21,7 +21,7 @@ export default function ArticleDescView({ article }: { article: Article }) {
           </div>
         </div>
       </div>
-      <p>{article.description}</p>
+      <p>{article.description}...</p>
     </Link>
   );
 }

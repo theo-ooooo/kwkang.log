@@ -21,7 +21,7 @@ export default function TopButton() {
   return (
     position > 0 && (
       <div
-        className='fixed bottom-10 right-10 rounded-full cursor-pointer border-[1px] border-gray-300 p-3 hover:opacity-70'
+        className='fixed bottom-10 right-10 rounded-full cursor-pointer border-[1px] border-gray-300 p-3 hover:opacity-70 bg-white'
         onClick={handleClick}
       >
         <GoMoveToTop size={30} />
