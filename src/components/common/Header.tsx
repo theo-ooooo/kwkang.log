@@ -3,7 +3,6 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense } from "react";
 
 const ThemeToggle = dynamic(() => import("./ThemeToggle"), { ssr: false });
 
