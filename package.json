@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sentry/nextjs": "^8",
     "@types/react-syntax-highlighter": "^15.5.13",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
