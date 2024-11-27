@@ -4,6 +4,7 @@ import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import TopButton from "@/components/common/Top";
 import ThemeProvider from "@/components/providers/ThemeProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +42,7 @@ export default function RootLayout({
           <TopButton />
         </ThemeProvider>
       </body>
+      <Analytics />
     </html>
   );
 }
