@@ -1,5 +1,5 @@
 import { Article } from "@/types/article";
-import ArticleDescView from "./articleDescView";
+import ArticleDescView from "./ArticleDescView";
 
 export default function ArticleList({ articles }: { articles: Article[] }) {
   return (

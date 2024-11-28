@@ -1,4 +1,4 @@
-import ArticleView from "@/components/articles/articleDetailView";
+import ArticleView from "@/components/articles/ArticleDetailView";
 import Profile from "@/components/common/Profile";
 import { ARTICLE_DIRECTORY } from "@/constants/directories";
 import { getAllArtclesPath, getArticleDescription } from "@/lib/articles/list";

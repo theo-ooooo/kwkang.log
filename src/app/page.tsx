@@ -1,4 +1,4 @@
-import ArticleList from "@/components/articles/articleList";
+import ArticleList from "@/components/articles/ArticleList";
 import Profile from "@/components/common/Profile";
 import { getArticlesPaths } from "@/lib/articles/list";
 import _ from "lodash";
