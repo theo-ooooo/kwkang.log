@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko' suppressHydrationWarning>
-      <body>
+      <body className='dark:bg-black'>
         <ThemeProvider>
           <Header />
           <main className='flex max-w-[768px] mx-auto px-2'>{children}</main>

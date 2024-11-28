@@ -5,7 +5,7 @@ export default function ArticleDescView({ article }: { article: Article }) {
   return (
     <Link href={`${article.route}`} className='flex flex-col w-full gap-3'>
       <div className='flex flex-col'>
-        <h2 className='w-full text-2xl overflow-hidden whitespace-nowrap font-bold truncate'>
+        <h2 className='w-full text-2xl overflow-hidden whitespace-nowrap font-bold truncate mb-1'>
           {article.title}
         </h2>
         <div className='flex justify-between gap-3'>
@@ -23,7 +23,7 @@ export default function ArticleDescView({ article }: { article: Article }) {
           </div>
         </div>
       </div>
-      <p>{article.description}...</p>
+      <p className='dark:text-zinc-200'>{article.description}...</p>
     </Link>
   );
 }
