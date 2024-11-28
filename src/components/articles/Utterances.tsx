@@ -2,10 +2,11 @@
 
 import { Theme } from "@/constants/common";
 import useTheme from "@/hooks/useTheme";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Utterances() {
   const ref = useRef<HTMLDivElement>(null);
+  const initRef = useRef<boolean>(false);
   const { theme } = useTheme();
 
   const utterancesDark = "github-dark";
@@ -14,10 +15,10 @@ export default function Utterances() {
   const utterancesTheme =
     theme === Theme.dark ? utterancesDark : utterancesLight;
 
-  useLayoutEffect(() => {
-    if (!ref.current) return;
+  useEffect(() => {
+    if (!ref.current || initRef.current) return;
 
-    ref.current.innerHTML = "";
+    initRef.current = true;
 
     const script = document.createElement("script");
 
@@ -36,7 +37,22 @@ export default function Utterances() {
     });
 
     ref.current.appendChild(script);
-  }, [ref, utterancesTheme]);
+  }, [utterancesTheme]);
+
+  useEffect(() => {
+    const utterancesIframe = document.querySelector<HTMLIFrameElement>(
+      "iframe.utterances-frame"
+    );
+
+    if (!utterancesIframe) return;
+    utterancesIframe.contentWindow?.postMessage(
+      {
+        type: "set-theme",
+        theme: utterancesTheme,
+      },
+      "https://utteranc.es"
+    );
+  }, [utterancesTheme]);
 
   return <div ref={ref}></div>;
 }
