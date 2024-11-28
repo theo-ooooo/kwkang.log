@@ -1,4 +1,5 @@
 import ArticleView from "@/components/articles/ArticleDetailView";
+import Utterances from "@/components/articles/Utterances";
 import Profile from "@/components/common/Profile";
 import { ARTICLE_DIRECTORY } from "@/constants/directories";
 import { getAllArtclesPath, getArticleDescription } from "@/lib/articles/list";
@@ -60,6 +61,9 @@ export default async function Page({
       <ArticleView article={article} />
       <div className='border-t-[1px]'>
         <Profile />
+      </div>
+      <div className='border-t-[1px]'>
+        <Utterances />
       </div>
     </div>
   );
