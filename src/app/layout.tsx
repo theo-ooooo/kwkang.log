@@ -5,6 +5,7 @@ import Header from "@/components/common/Header";
 import TopButton from "@/components/common/Top";
 import ThemeProvider from "@/components/providers/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
@@ -42,6 +43,7 @@ export default function RootLayout({
           <TopButton />
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
