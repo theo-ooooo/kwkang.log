@@ -35,8 +35,6 @@ export default function Utterances() {
       script.setAttribute(key, value);
     });
 
-    console.log(script);
-
     ref.current.appendChild(script);
   }, [utterancesTheme]);
 
