@@ -2,7 +2,7 @@
 
 import { Theme } from "@/constants/common";
 import useTheme from "@/hooks/useTheme";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 export default function Utterances() {
   const ref = useRef<HTMLDivElement>(null);
@@ -14,7 +14,7 @@ export default function Utterances() {
   const utterancesTheme =
     theme === Theme.dark ? utterancesDark : utterancesLight;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!ref.current) return;
 
     ref.current.innerHTML = "";
@@ -36,7 +36,7 @@ export default function Utterances() {
     });
 
     ref.current.appendChild(script);
-  }, [utterancesTheme]);
+  }, [ref, utterancesTheme]);
 
   return <div ref={ref}></div>;
 }
