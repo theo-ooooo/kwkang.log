@@ -4,6 +4,7 @@ import Profile from "@/components/common/Profile";
 import { ARTICLE_DIRECTORY } from "@/constants/directories";
 import { getAllArtclesPath, getArticleDescription } from "@/lib/articles/list";
 import { GetMarkdown } from "@/lib/viewer/markdown";
+import { Metadata } from "next";
 
 export const dynamic = "force-static";
 
@@ -17,7 +18,7 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ directory: string; id: string }>;
-}) {
+}): Promise<Metadata> {
   const { directory, id } = await params;
 
   const article = GetMarkdown({
@@ -32,6 +33,7 @@ export async function generateMetadata({
     openGraph: {
       title: article.title,
       description,
+      siteName: "kwkang.log",
       url: `https://kwkang.net/articles/${directory}/${id}`,
       images: [
         {
