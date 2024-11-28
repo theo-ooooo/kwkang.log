@@ -53,6 +53,12 @@ export function getAllArtclesPath() {
 
 export function getArticleDescription(content: string) {
   const contentLength = 200;
-  const description = RemoveMarkdown(content).slice(0, contentLength);
+
+  const description = RemoveMarkdown(content)
+    .replace(RegExp(/\n/g), "")
+    .replace(RegExp(/```([\s\S]*?)```/g), "") // code
+    .replace(RegExp(/~~~([\s\S]*?)~~~/g), "") // pre
+    .replace(/#{1,6}.+(?=\n)/, "") // heading
+    .slice(0, contentLength);
   return description;
 }
