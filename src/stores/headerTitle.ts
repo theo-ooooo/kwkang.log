@@ -2,6 +2,8 @@ import { create } from "zustand";
 
 export interface HeaderTitleStore {
   title: string;
+  clearTitle: () => void;
+  setTitle: (title: string) => void;
 }
 
 export const useHeaderTitleStore = create<HeaderTitleStore>((set) => ({
