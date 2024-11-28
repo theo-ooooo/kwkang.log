@@ -1,7 +1,20 @@
+"use client";
+
 import { Article } from "@/types/article";
 import MarkdownView from "./MarkdownView";
+import { useHeaderTitleStore } from "@/stores/headerTitle";
+import { useEffect } from "react";
 
 export default function ArticleView({ article }: { article: Article }) {
+  const { setTitle, clearTitle } = useHeaderTitleStore();
+
+  useEffect(() => {
+    if (article.title) {
+      setTitle(article.title);
+    }
+    return () => clearTitle();
+  }, []);
+
   return (
     <div className='flex flex-col gap-5'>
       <div className='flex flex-col gap-2'>
