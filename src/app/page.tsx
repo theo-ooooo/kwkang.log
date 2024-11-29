@@ -28,7 +28,7 @@ export default async function Home({
       </div>
       <div className='flex gap-3 overflow-x-auto '>
         {["All", ...tags].map((tag) => (
-          <Tag tag={tag} />
+          <Tag key={tag} tag={tag} />
         ))}
       </div>
       <ArticleList articles={articles} />
