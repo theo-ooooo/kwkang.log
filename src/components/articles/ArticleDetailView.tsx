@@ -3,10 +3,15 @@
 import { Article } from "@/types/article";
 import MarkdownView from "./MarkdownView";
 import { useHeaderTitleStore } from "@/stores/headerTitle";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import useScrollOverElement from "@/hooks/useScrollOverElement";
 
 export default function ArticleView({ article }: { article: Article }) {
-  const { setTitle, clearTitle } = useHeaderTitleStore();
+  const { setTitle, clearTitle, isShowTitle } = useHeaderTitleStore();
+
+  const titleRef = useRef<HTMLDivElement>(null);
+
+  const isOver = useScrollOverElement(titleRef);
 
   useEffect(() => {
     if (article.title) {
@@ -15,10 +20,17 @@ export default function ArticleView({ article }: { article: Article }) {
     return () => clearTitle();
   }, []);
 
+  useEffect(() => {
+    isShowTitle(isOver);
+    console.log(isOver);
+  }, [isOver, isShowTitle]);
+
   return (
     <div className='flex flex-col gap-5'>
       <div className='flex flex-col gap-2'>
-        <h1 className='text-3xl font-bold'>{article.title}</h1>
+        <div className='text-3xl font-bold' ref={titleRef}>
+          {article.title}
+        </div>
         <div className='flex justify-between'>
           <div className='text-sm text-zinc-400'>{article.date}</div>
           <div className='flex gap-2 text-sm text-zinc-400'>
