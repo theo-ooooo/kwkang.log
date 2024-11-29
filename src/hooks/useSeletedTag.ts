@@ -15,10 +15,13 @@ export default function useSeletedTag() {
     seleted(selectedTag);
   }, [selectedTag, seleted]);
 
-  const handleClick = useCallback((tag: string) => {
-    const move = tag === "All" ? "/" : `/?tag=${tag}`;
-    router.push(move, { scroll: true });
-  }, []);
+  const handleClick = useCallback(
+    (tag: string) => {
+      const move = tag === "All" ? "/" : `/?tag=${tag}`;
+      router.push(move, { scroll: true });
+    },
+    [tag]
+  );
 
   return { selectedTag: tag, handleClick };
 }
