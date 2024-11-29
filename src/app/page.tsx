@@ -26,7 +26,7 @@ export default async function Home({
       <div className='border-b-[1px]'>
         <Profile />
       </div>
-      <div className='flex gap-3 overflow-x-auto '>
+      <div className='flex gap-3 py-2 overflow-x-auto sticky top-[62px] bg-white dark:bg-black items-center '>
         {["All", ...tags].map((tag) => (
           <Tag key={tag} tag={tag} />
         ))}
