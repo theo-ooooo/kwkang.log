@@ -20,7 +20,9 @@ export function GetMarkdown({
       title: matterResult.data.title,
       date: matterResult.data.date,
       content: matterResult.content,
-      tags: (matterResult.data.tag as string).split(","),
+      tags: (matterResult.data.tag as string)
+        .split(",")
+        .map((tag) => tag.trim()),
     };
   } catch (e) {
     throw e;
