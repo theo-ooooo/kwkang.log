@@ -1,16 +1,17 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import useThrottle from "./useThrottle";
 
 export default function useScrollOverElement(
   ref: React.RefObject<HTMLElement>
 ) {
   const [isOver, setIsOver] = useState(false);
 
-  const handleScroll = useCallback(() => {
+  const handleScroll = useThrottle(() => {
     if (!ref.current) return;
     const { bottom } = ref.current.getBoundingClientRect();
 
     setIsOver(bottom < 0); // 0보다 작아지면 안보이네.
-  }, [ref]);
+  }, 200);
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
