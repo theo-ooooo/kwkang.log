@@ -1,6 +1,5 @@
 import ArticleList from "@/components/articles/ArticleList";
 import Profile from "@/components/common/Profile";
-import Tag from "@/components/tags/Tag";
 import TagSeletor from "@/components/tags/TagSeletor";
 import { getArticlesPaths } from "@/lib/articles/list";
 import _ from "lodash";
