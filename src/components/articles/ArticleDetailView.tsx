@@ -22,7 +22,6 @@ export default function ArticleView({ article }: { article: Article }) {
 
   useEffect(() => {
     isShowTitle(isOver);
-    console.log(isOver);
   }, [isOver, isShowTitle]);
 
   return (
