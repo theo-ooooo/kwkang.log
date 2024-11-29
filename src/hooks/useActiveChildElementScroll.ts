@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 interface UseActiveChildElementScrollProps {
   containerRef: React.RefObject<HTMLDivElement>;
