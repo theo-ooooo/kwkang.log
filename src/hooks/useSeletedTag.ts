@@ -16,11 +16,12 @@ export default function useSeletedTag() {
   }, [selectedTag, seleted]);
 
   const handleClick = useCallback(
-    (tag: string) => {
-      const move = tag === "All" ? "/" : `/?tag=${tag}`;
+    (clickTag: string) => {
+      if (clickTag === tag) return;
+      const move = clickTag === "All" ? "/" : `/?tag=${clickTag}`;
       router.push(move, { scroll: true });
     },
-    [router]
+    [router, tag]
   );
 
   return { selectedTag: tag, handleClick };
