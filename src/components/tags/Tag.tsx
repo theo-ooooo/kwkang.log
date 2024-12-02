@@ -1,7 +1,6 @@
 "use client";
 
 import clsx from "clsx";
-import { RefObject } from "react";
 
 export default function Tag({
   tag,

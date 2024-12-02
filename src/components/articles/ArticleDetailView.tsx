@@ -22,7 +22,7 @@ export default function ArticleView({ article }: { article: Article }) {
 
   useEffect(() => {
     isShowTitle(isOver);
-  }, [isOver, isShowTitle]);
+  }, [isOver, isShowTitle, article.title, clearTitle]);
 
   return (
     <div className='flex flex-col gap-5'>

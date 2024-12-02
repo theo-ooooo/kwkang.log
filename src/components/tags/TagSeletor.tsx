@@ -1,8 +1,10 @@
 "use client";
-import { useRef } from "react";
+import { memo, useRef } from "react";
 import Tag from "./Tag";
 import useSeletedTag from "@/hooks/useSeletedTag";
 import useActiveChildElementScroll from "@/hooks/useActiveChildElementScroll";
+
+const MemorizeTag = memo(Tag);
 
 export default function TagSeletor({ tags }: { tags: string[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -19,7 +21,7 @@ export default function TagSeletor({ tags }: { tags: string[] }) {
       className='flex gap-1 py-2 overflow-x-auto sticky top-[62px] bg-white dark:bg-black items-center '
     >
       {tags.map((tag) => (
-        <Tag
+        <MemorizeTag
           key={tag}
           ref={(instance: HTMLDivElement) => registerChildRef(instance, tag)}
           tag={tag}

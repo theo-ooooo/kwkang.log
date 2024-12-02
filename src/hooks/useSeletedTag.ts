@@ -20,7 +20,7 @@ export default function useSeletedTag() {
       const move = tag === "All" ? "/" : `/?tag=${tag}`;
       router.push(move, { scroll: true });
     },
-    [tag]
+    [tag, router]
   );
 
   return { selectedTag: tag, handleClick };
