@@ -5,7 +5,6 @@ export default function useTheme() {
   const { theme, setTheme } = nextUseTheme();
 
   const handleTheme = () => {
-    console.log(111);
     setTheme(theme === Theme.light ? Theme.dark : Theme.light);
   };
 

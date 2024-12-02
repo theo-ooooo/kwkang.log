@@ -1,36 +1,50 @@
-import { useEffect } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 interface UseActiveChildElementScrollProps {
   containerRef: React.RefObject<HTMLDivElement>;
-  activeIndex: number;
+  activeId: string;
   behavior?: ScrollBehavior;
 }
 
 export default function useActiveChildElementScroll({
   containerRef,
-  activeIndex,
+  activeId,
   behavior = "smooth",
 }: UseActiveChildElementScrollProps) {
+  const itemRefs = useRef<Record<string, HTMLElement | null>>({});
   useEffect(() => {
-    if (containerRef.current && activeIndex >= 0) {
-      const container = containerRef.current;
-      const activeElement = container.children[activeIndex] as HTMLElement;
-      if (!activeElement.offsetParent) return;
+    const parentRefExists = containerRef && containerRef.current;
 
-      if (activeElement) {
-        container.scrollTo({
-          top:
-            activeElement.offsetTop -
-            (activeElement.offsetParent?.clientHeight -
-              activeElement.offsetHeight) /
-              2,
-          left:
-            activeElement.offsetLeft -
-            container.offsetWidth / 2 +
-            activeElement.offsetWidth / 2,
-          behavior,
-        });
-      }
+    const activeChildRef = activeId ? itemRefs.current[activeId] : null;
+
+    if (!parentRefExists || !activeChildRef) {
+      return;
     }
-  }, [activeIndex, containerRef, behavior]);
+    const container = containerRef.current;
+    if (!activeChildRef.offsetParent) return;
+
+    if (activeChildRef) {
+      container.scrollTo({
+        top:
+          activeChildRef.offsetTop -
+          (activeChildRef.offsetParent?.clientHeight -
+            activeChildRef.offsetHeight) /
+            2,
+        left:
+          activeChildRef.offsetLeft -
+          container.offsetWidth / 2 +
+          activeChildRef.offsetWidth / 2,
+        behavior,
+      });
+    }
+  }, [activeId, containerRef, behavior]);
+
+  const registerCHildRef = useCallback(
+    (instance: HTMLElement, id: string) => {
+      itemRefs.current[id] = instance;
+    },
+    [itemRefs]
+  );
+
+  return registerCHildRef;
 }

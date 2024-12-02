@@ -8,10 +8,11 @@ export default function TagSeletor({ tags }: { tags: string[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { selectedTag, handleClick } = useSeletedTag();
 
-  useActiveChildElementScroll({
+  const registerChildRef = useActiveChildElementScroll({
     containerRef,
-    activeIndex: tags.indexOf(selectedTag),
+    activeId: selectedTag,
   });
+
   return (
     <div
       ref={containerRef}
@@ -20,6 +21,7 @@ export default function TagSeletor({ tags }: { tags: string[] }) {
       {tags.map((tag) => (
         <Tag
           key={tag}
+          ref={(instance: HTMLDivElement) => registerChildRef(instance, tag)}
           tag={tag}
           onClick={handleClick}
           isSelected={selectedTag === tag}

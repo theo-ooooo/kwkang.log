@@ -1,18 +1,22 @@
 "use client";
 
 import clsx from "clsx";
+import { RefObject } from "react";
 
 export default function Tag({
   tag,
   isSelected,
   onClick,
+  ref,
 }: {
   tag: string;
   isSelected: boolean;
   onClick: (tag: string) => void;
+  ref: (instance: HTMLDivElement) => void;
 }) {
   return (
     <div
+      ref={ref}
       onClick={() => onClick(tag)}
       className={clsx(
         "px-4 py-1 mx-1 mb-2 text-xs whitespace-pre duration-300 rounded-xl text-white cursor-pointer",
