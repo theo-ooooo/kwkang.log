@@ -18,11 +18,11 @@ export default function ArticleView({ article }: { article: Article }) {
       setTitle(article.title);
     }
     return () => clearTitle();
-  }, []);
+  }, [article.title, clearTitle, setTitle]);
 
   useEffect(() => {
     isShowTitle(isOver);
-  }, [isOver, isShowTitle, article.title, clearTitle]);
+  }, [isShowTitle, isOver]);
 
   return (
     <div className='flex flex-col gap-5'>
