@@ -19,12 +19,12 @@ export default function Modal({ children }: { children: React.ReactNode }) {
     <dialog
       ref={dialogRef}
       onClose={() => router.back()}
-      // onClick={(e) => {
-      //   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      //   if ((e.target as any).nodeName === "DIALOG") {
-      //     router.back();
-      //   }
-      // }}
+      onClick={(e) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        if ((e.target as any).nodeName === "DIALOG") {
+          router.back();
+        }
+      }}
       className='w-[80%] max-w-[700px] mt-5 rounded-md border-none backdrop:bg-[rgba(0,0,0,0.7)] px-4'
     >
       {children}
