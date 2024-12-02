@@ -20,6 +20,7 @@ export default function Modal({ children }: { children: React.ReactNode }) {
       ref={dialogRef}
       onClose={() => router.back()}
       onClick={(e) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         if ((e.target as any).nodeName === "DIALOG") {
           router.back();
         }
