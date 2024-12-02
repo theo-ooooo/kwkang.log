@@ -27,7 +27,7 @@ export default function ArticleView({ article }: { article: Article }) {
   return (
     <div className='flex flex-col gap-5'>
       <div className='flex flex-col gap-2'>
-        <div className='text-3xl font-bold' ref={titleRef}>
+        <div className='text-2xl font-bold md:text-3xl' ref={titleRef}>
           {article.title}
         </div>
         <div className='flex justify-between'>
