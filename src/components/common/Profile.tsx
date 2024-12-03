@@ -21,7 +21,7 @@ export default function Profile() {
         <p className='font-semibold'>{name}</p>
         <div className='flex gap-2'>
           {Object.entries(link).map(([name, href]) => (
-            <Link href={href} key={name}>
+            <Link href={href} key={name} target='_blank'>
               {name === "github" ? (
                 <FaGithub size={28} />
               ) : (
