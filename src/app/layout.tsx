@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     default: "Theo.log",
   },
   description: "Theo의 개발 블로그 입니다.",
+  other: {
+    ["naver-site-verification"]: "4aa506f808f61858b1492263f589d1148039bbfb",
+  },
   openGraph: {
     title: "Theo.log",
     description: "Theo의 개발 블로그 입니다.",
