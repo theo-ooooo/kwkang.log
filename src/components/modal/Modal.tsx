@@ -25,7 +25,7 @@ export default function Modal({ children }: { children: React.ReactNode }) {
           router.back();
         }
       }}
-      className='w-[93%] md:w-[80%] max-w-[700px] mt-5 rounded-md border-none backdrop:bg-[rgba(0,0,0,0.7)] backdrop:dark:bg-[rgba(255,255,255, 0.3)] px-4'
+      className='w-[93%] md:w-[80%] max-w-[700px] mt-5 rounded-md border-none backdrop:bg-[rgba(0,0,0,0.7)] backdrop:dark:bg-[rgba(255,255,255, 0.3)] p-5'
     >
       {children}
     </dialog>,

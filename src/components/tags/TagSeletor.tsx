@@ -23,7 +23,7 @@ export default function TagSeletor({ tags }: { tags: string[] }) {
       {tags.map((tag) => (
         <MemorizeTag
           key={tag}
-          ref={(instance: HTMLDivElement) => registerChildRef(instance, tag)}
+          ref={(instance: HTMLElement) => registerChildRef(instance, tag)}
           tag={tag}
           onClick={handleClick}
           isSelected={selectedTag === tag}

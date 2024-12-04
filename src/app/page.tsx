@@ -10,9 +10,7 @@ export default async function Home({
 }: {
   searchParams: Promise<{ tag: string }>;
 }) {
-  let articles = getArticlesPaths();
-
-  articles = articles.sort(
+  let articles = getArticlesPaths().sort(
     (a: Article, b: Article) =>
       new Date(b.date).getTime() - new Date(a.date).getTime()
   );
