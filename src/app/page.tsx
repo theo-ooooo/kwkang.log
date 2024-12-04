@@ -2,6 +2,7 @@ import ArticleList from "@/components/articles/ArticleList";
 import Profile from "@/components/common/Profile";
 import TagSeletor from "@/components/tags/TagSeletor";
 import { getArticlesPaths } from "@/lib/articles/list";
+import { Article } from "@/types/article";
 import _ from "lodash";
 
 export default async function Home({
@@ -11,7 +12,10 @@ export default async function Home({
 }) {
   let articles = getArticlesPaths();
 
-  articles = _.orderBy(articles, ["date"], ["desc"]);
+  articles = articles.sort(
+    (a: Article, b: Article) =>
+      new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 
   const tags = _.uniq(articles.flatMap((article) => article.tags));
 
