@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from "react";
 
 interface UseActiveChildElementScrollProps {
-  containerRef: React.RefObject<HTMLDivElement>;
+  containerRef: React.RefObject<HTMLDivElement | null>;
   activeId: string;
   behavior?: ScrollBehavior;
 }
@@ -21,7 +21,7 @@ export default function useActiveChildElementScroll({
       return;
     }
     const container = containerRef.current;
-    if (!activeChildRef.offsetParent) return;
+    if (!container || !activeChildRef.offsetParent) return;
 
     if (activeChildRef) {
       container.scrollTo({

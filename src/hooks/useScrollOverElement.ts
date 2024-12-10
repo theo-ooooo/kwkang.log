@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import useThrottle from "./useThrottle";
 
 export default function useScrollOverElement(
-  ref: React.RefObject<HTMLElement>
+  ref: React.RefObject<HTMLElement | null>
 ) {
   const [isOver, setIsOver] = useState(false);
 
