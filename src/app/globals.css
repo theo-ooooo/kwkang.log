@@ -5,3 +5,340 @@
 * {
   letter-spacing: -0.05rem;
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.5);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(75, 85, 99, 0.7);
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+  /* Print styles */
+@media print {
+  @page {
+    margin: 1cm 1.2cm;
+    size: A4;
+    marks: none;
+  }
+
+  /* Remove any top margin/padding that might create empty space */
+  html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide browser print headers/footers using CSS */
+  @page {
+    @top-left { content: ""; }
+    @top-center { content: ""; }
+    @top-right { content: ""; }
+    @bottom-left { content: ""; }
+    @bottom-center { content: ""; }
+    @bottom-right { content: ""; }
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+    background: #fff !important;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  /* Hide navigation and other UI elements */
+  header,
+  header *,
+  footer,
+  footer *,
+  nav,
+  aside,
+  button,
+  /* Hide Header - sticky top navigation */
+  [class*="sticky"][class*="top-0"],
+  /* Hide TopButton - fixed bottom right */
+  [class*="fixed"][class*="bottom-3"][class*="right-3"],
+  [class*="fixed"][class*="bottom-10"][class*="right-10"],
+  /* Hide any fixed position buttons */
+  [class*="fixed"][class*="z-50"]:not([class*="print"]) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Main container */
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Remove body padding/margin */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Typography */
+  h1 {
+    color: #1a1a1a !important;
+    font-size: 24pt !important;
+    font-weight: 700 !important;
+    margin-bottom: 8pt !important;
+  }
+
+  h2 {
+    color: #2d3748 !important;
+    font-size: 16pt !important;
+    font-weight: 600 !important;
+    margin-top: 12pt !important;
+    margin-bottom: 8pt !important;
+    padding-bottom: 4pt !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    page-break-after: auto;
+    page-break-before: auto;
+  }
+
+  h3 {
+    color: #2d3748 !important;
+    font-size: 13pt !important;
+    font-weight: 600 !important;
+    margin-top: 8pt !important;
+    margin-bottom: 4pt !important;
+    page-break-after: auto;
+  }
+
+  p {
+    color: #4a5568 !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8pt !important;
+    word-wrap: break-word !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Prevent text from being cut off */
+  * {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Korean text handling */
+  p, li, span {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Sections - allow page breaks to avoid empty pages */
+  section {
+    page-break-inside: auto;
+    margin-bottom: 12pt !important;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Only avoid breaking for small sections */
+  section:has(> h2 + *:only-child) {
+    page-break-inside: avoid;
+  }
+
+  /* Borders and backgrounds */
+  * {
+    box-shadow: none !important;
+  }
+
+  .border,
+  .border-b,
+  .border-gray-200,
+  .border-gray-800 {
+    border-color: #e2e8f0 !important;
+  }
+
+  /* Background colors - subtle gray for sections */
+  .bg-gray-50,
+  .bg-gray-900,
+  .bg-white {
+    background: #f8f9fa !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  /* Text colors */
+  .text-gray-700,
+  .text-gray-300 {
+    color: #4a5568 !important;
+  }
+
+  .text-gray-600,
+  .text-gray-400 {
+    color: #718096 !important;
+  }
+
+  .text-gray-500 {
+    color: #a0aec0 !important;
+  }
+
+  .dark\\:text-white,
+  .dark\\:text-gray-300 {
+    color: #2d3748 !important;
+  }
+
+  /* Links */
+  a {
+    color: #2c5282 !important;
+    text-decoration: none !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #718096;
+    font-weight: normal;
+  }
+
+  a[href^="mailto"]:after {
+    content: "";
+  }
+
+  /* Lists */
+  ul {
+    margin-left: 16pt !important;
+    padding-left: 0 !important;
+  }
+
+  li {
+    color: #4a5568 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.5 !important;
+    margin-bottom: 4pt !important;
+    word-wrap: break-word !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Tags and badges */
+  span[class*="px-3"],
+  span[class*="px-2"],
+  .inline-block[class*="rounded-full"],
+  .inline-block[class*="rounded-lg"] {
+    background: #e2e8f0 !important;
+    color: #4a5568 !important;
+    border: 1px solid #cbd5e0 !important;
+    padding: 3pt 8pt !important;
+    font-size: 9pt !important;
+    border-radius: 4pt !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+  }
+
+  /* Tech stack tags - preserve spaces */
+  .tech-stack-tag {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+  }
+
+  /* Career tags specifically */
+  .career-item span[class*="inline-block"] {
+    background: #e2e8f0 !important;
+    color: #4a5568 !important;
+    border: 1px solid #cbd5e0 !important;
+    padding: 3pt 8pt !important;
+    font-size: 9pt !important;
+    border-radius: 4pt !important;
+    display: inline-block !important;
+    white-space: normal !important;
+    line-height: 1.4 !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Ensure spans don't break words incorrectly */
+  span {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Profile image */
+  img {
+    border: 2px solid #e2e8f0 !important;
+  }
+
+  /* Spacing adjustments */
+  .space-y-4 > * + * {
+    margin-top: 12pt !important;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 16pt !important;
+  }
+
+  .space-y-8 > * + * {
+    margin-top: 20pt !important;
+  }
+
+  /* Print-friendly spacing */
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Allow page breaks for better space usage */
+  .flex {
+    page-break-inside: auto;
+  }
+
+  /* Page break optimization - allow breaks but keep related content together */
+  .career-item,
+  .project-item {
+    page-break-inside: auto;
+    orphans: 2;
+    widows: 2;
+  }
+
+  /* Prevent orphaned headings */
+  h2 + *,
+  h3 + * {
+    page-break-before: auto;
+  }
+
+  /* Reduce excessive spacing that causes empty pages */
+  .space-y-8 > * + * {
+    margin-top: 12pt !important;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 10pt !important;
+  }
+
+  .space-y-4 > * + * {
+    margin-top: 8pt !important;
+  }
+}
