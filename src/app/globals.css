@@ -204,8 +204,8 @@
     color: #a0aec0 !important;
   }
 
-  .dark\\:text-white,
-  .dark\\:text-gray-300 {
+  [class*="dark:text-white"],
+  [class*="dark:text-gray-300"] {
     color: #2d3748 !important;
   }
 
