@@ -24,10 +24,8 @@ export default async function Home({
   }
 
   return (
-    <div className='w-full my-8 flex flex-col gap-3'>
-      <div className='border-b-[1px]'>
-        <Profile />
-      </div>
+    <div className='w-full my-8 flex flex-col gap-8'>
+      <Profile />
       <TagSeletor tags={["All", ...tags]} />
       <ArticleList articles={articles} />
     </div>

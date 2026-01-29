@@ -18,7 +18,7 @@ export default function TagSeletor({ tags }: { tags: string[] }) {
   return (
     <div
       ref={containerRef}
-      className='flex gap-1 py-2 overflow-x-auto sticky top-[62px] bg-white dark:bg-black items-center '
+      className='flex gap-1 py-3 overflow-x-auto sticky top-[70px] bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 items-center z-40'
     >
       {tags.map((tag) => (
         <MemorizeTag

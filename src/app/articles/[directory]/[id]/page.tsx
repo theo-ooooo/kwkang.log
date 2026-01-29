@@ -59,12 +59,12 @@ export default async function Page({
     id,
   });
   return (
-    <div className='w-full mt-8 flex flex-col gap-3'>
+    <div className='w-full mt-8 flex flex-col gap-8'>
       <ArticleView article={article} />
-      <div className='border-t-[1px]'>
+      <div className='border-t border-gray-200 dark:border-gray-800 pt-8'>
         <Profile />
       </div>
-      <div className='border-t-[1px]'>
+      <div className='border-t border-gray-200 dark:border-gray-800 pt-8'>
         <Utterances />
       </div>
     </div>

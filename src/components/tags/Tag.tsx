@@ -18,9 +18,11 @@ export default function Tag({
       ref={ref}
       onClick={() => onClick(tag)}
       className={clsx(
-        "px-4 py-1 mx-1 mb-2 text-xs whitespace-pre duration-300 rounded-xl text-white cursor-pointer",
-        { "font-bold bg-sky-400 dark:bg-neutral-500": isSelected },
-        { "font-semibold bg-sky-300 dark:bg-neutral-700": !isSelected }
+        "px-4 py-1.5 mx-1 mb-2 text-xs whitespace-pre rounded-md cursor-pointer font-medium transition-colors",
+        {
+          "bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900": isSelected,
+          "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700": !isSelected
+        }
       )}
     >
       {tag.toUpperCase()}
