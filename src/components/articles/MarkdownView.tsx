@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -17,6 +18,8 @@ export default function MarkdownView({ contentHtml }: { contentHtml: string }) {
         components={{
           code({ className, children, ...rest }) {
             const match = /language-(\w+)/.exec(className || "");
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { ref: _, ...codeProps } = rest as Record<string, unknown>;
             return match ? (
               <SyntaxHighlighter
                 language={match[1]}
@@ -32,7 +35,7 @@ export default function MarkdownView({ contentHtml }: { contentHtml: string }) {
                 {String(children).replace(/\n$/, "")}
               </SyntaxHighlighter>
             ) : (
-              <code className='px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-blue-400 rounded text-sm font-medium' {...rest}>{children}</code>
+              <code className='px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-blue-400 rounded text-sm font-medium' {...(codeProps as React.HTMLAttributes<HTMLElement>)}>{children}</code>
             );
           },
         }}
