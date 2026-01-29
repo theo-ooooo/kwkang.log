@@ -1,8 +1,128 @@
 {
-  "name": "Kyung Won Kang",
-  "ImageSrc": "/images/profile.jpeg",
-  "link": {
+  "name": "강경원",
+  "nameEn": "Kyung Won Kang",
+  "imageSrc": "/images/profile.jpeg",
+  "role": "Backend Developer",
+  "description": "운영 환경에서 신뢰할 수 있는 서비스를 만드는 개발자",
+  "links": {
     "github": "https://github.com/theo-ooooo",
-    "notion": "https://kkwon-theo.notion.site/Kang-kyungwon-2e211b9df81f473ca887d06afccaef1b"
-  }
+    "blog": "https://kwkang.net",
+    "email": "kkwondev@gmail.com"
+  },
+  "strengths": [
+    {
+      "title": "실전 경험",
+      "description": "글로벌 서비스 운영 및 성능 최적화"
+    },
+    {
+      "title": "전체 스택",
+      "description": "Backend부터 Frontend까지 폭넓은 이해"
+    },
+    {
+      "title": "협업 중심",
+      "description": "직군 간 원활한 소통과 협업"
+    }
+  ],
+  "introduction": [
+    "글로벌 서비스 환경에서 다양한 플랫폼 기능을 개발하고, 운영 중 발생하는 <span class=\"font-semibold text-gray-900 dark:text-white\">성능 이슈를 구조적으로 해결</span>해 온 백엔드 개발자입니다.",
+    "<span class=\"font-semibold\">Node.js(NestJS)</span>를 주로 사용해서 결제, 이벤트, 관리자 시스템, 운영 자동화 등 서비스 전반의 기능을 직접 설계하고 구현해왔어요. 슬로우 쿼리를 개선하거나 API 구조를 리팩토링하면서 실제 서비스 응답 속도와 안정성을 개선한 경험이 있습니다.",
+    "프론트엔드(React, Next.js)도 다뤄봐서 기획·디자인·프론트엔드와 협업할 때도 전체 흐름을 이해하며 문제를 해결할 수 있어요. 최근에는 <span class=\"font-semibold\">Spring Boot, Kotlin, AWS</span>까지 배워서 더 큰 규모의 시스템을 설계하는 경험을 쌓고 있습니다.",
+    "실무에서 가장 중요하게 생각하는 건 <span class=\"font-semibold\">운영 안정성</span>이에요. 개발할 때만 잘 돌아가는 코드가 아니라, 트래픽이 몰리고 예외 상황이 생겨도 안정적으로 동작할 수 있도록 설계하는 걸 우선시합니다. 데이터베이스 쿼리 최적화, 캐싱 전략, 에러 핸들링 강화 등으로 시스템 안정성을 높여왔어요.",
+    "성능 문제가 생기면 하드웨어를 늘리는 것보다는, 데이터 흐름과 구조를 분석해서 근본적인 해결책을 찾으려고 해요. 슬로우 쿼리를 분석해서 인덱스를 추가하거나 쿼리 로직을 개선하고, API 구조를 리팩토링해서 불필요한 DB 호출을 줄이는 식으로 실제 서비스 응답 속도를 크게 개선한 경험이 있습니다.",
+    "코드는 한 번 쓰고 끝나는 게 아니라 계속 수정되고 확장되니까, 나중에 다른 사람이 봤을 때도 이해하기 쉽고 수정하기 쉬운 코드를 쓰려고 노력해요. 명확한 책임 분리와 적절한 추상화로 유지보수성을 높이는 걸 중요하게 생각하고, 기존 콜백 기반 비동기 로직을 async/await로 바꿔서 코드 가독성과 유지보수성을 개선한 경험이 있어요.",
+    "개발자는 혼자 일하는 직업이 아니라고 생각해요. 기획자, 디자이너, 프론트엔드 개발자와 함께 일하면서 전체적인 흐름을 이해하고, 서로의 업무를 존중하며 소통하는 게 좋은 결과를 만들어낸다고 믿습니다. 프론트엔드 개발 경험 덕분에 API 설계할 때도 사용자 관점을 고려하고, 기획·디자인팀과 협업할 때도 기술적 제약사항을 명확히 전달하며 최선의 해결책을 찾아갑니다."
+  ],
+  "careers": [
+    {
+      "company": "에스에스알",
+      "period": "2025.07 ~ 재직 중",
+      "position": "Backend Developer",
+      "tags": ["Python/Flask", "DevOps"],
+      "description": [
+        "보안 솔루션 플랫폼(SolidStep-CCE) 백엔드 운영 및 기능 고도화",
+        "Python/Flask 기반 API 개발 및 고도화, Celery/Redis 기반 비동기 작업 운영",
+        "Debian + Nginx + Gunicorn 기반 서버 운영 및 로그/배포 환경 관리",
+        "PostgreSQL 기반 쿼리 개선 및 데이터 모델링"
+      ]
+    },
+    {
+      "company": "탑코",
+      "period": "2021.07 ~ 2025.02",
+      "position": "Backend Developer",
+      "tags": ["Node.js/NestJS"],
+      "description": [
+        "글로벌 웹툰 플랫폼 관리자 시스템 및 다국가 결제 백엔드 개발·운영",
+        "기존 콜백 기반 비동기 로직을 async/await 구조로 전환하여 유지보수성 개선 및 버그 발생 감소",
+        "슬로우 쿼리 분석 및 API 구조 리팩토링을 통해 주요 API 응답 속도 대폭 개선",
+        "일본 PG 8종 및 Google Play Billing API 연동을 포함한 다국가 결제 처리 시스템 안정 운영",
+        "룰렛 이벤트 기능 개발 및 혜택 자동 지급 프로세스 구축, 트래픽 집중 구간에서도 안정적인 이벤트 운영 지원"
+      ]
+    },
+    {
+      "company": "후스구스",
+      "period": "2021.03 ~ 2021.06",
+      "position": "Frontend Developer",
+      "tags": ["React"],
+      "description": [
+        "React 기반 해외배송 서비스(SPA) 구축",
+        "GraphQL 기반 쇼핑몰 UI 기능 개선 및 유지보수"
+      ]
+    },
+    {
+      "company": "퍼플스",
+      "period": "2020.11 ~ 2021.02",
+      "position": "Web Publisher",
+      "tags": ["Web Publishing"],
+      "description": [
+        "반응형 웹 퍼블리싱 및 크로스브라우징 대응"
+      ]
+    }
+  ],
+  "techStack": {
+    "Backend": ["Node.js", "NestJS", "Java", "Spring Boot", "Python", "Flask"],
+    "Database": ["MySQL", "PostgreSQL", "JPA", "TypeORM"],
+    "Infra / DevOps": ["AWS ECS/ECR", "Docker", "GitHub Actions", "GitLab CI", "Nginx", "Gunicorn", "Redis", "Celery"],
+    "Frontend": ["React", "Next.js", "TypeScript", "Flutter"]
+  },
+  "projects": [
+    {
+      "title": "Lunatalk — 전자상거래 플랫폼",
+      "type": "Side Project",
+      "status": "개발완료",
+      "description": [
+        "Spring Boot 기반 상품 / 주문 / 결제 API 설계 및 구현",
+        "Redis 캐시 구조 적용을 통한 조회 성능 개선",
+        "CRA → Next.js 마이그레이션 및 관리자 UI 구축",
+        "Docker 기반 로컬/운영 환경 구성 및 배포 자동화"
+      ],
+      "link": "https://lunatalk.co.kr"
+    },
+    {
+      "title": "Tech Blog",
+      "type": "Personal Project",
+      "status": "개발완료",
+      "description": [
+        "Next.js App Router 기반 SSR 블로그를 구축했습니다. 다크모드, 태그 필터링, 댓글 시스템을 구현하여 개인 기술 정리 및 트러블슈팅 기록을 목적으로 운영하고 있습니다."
+      ],
+      "link": "https://kwkang.net"
+    },
+    {
+      "title": "오늘도 (Onuldo) — 취미 기록 & 공유 앱",
+      "type": "Mobile Service Project",
+      "status": "개발중",
+      "description": [
+        "Flutter(앱) + Kotlin(백엔드) 기반 모바일 서비스 프로젝트",
+        "취미 활동 타이머, 사진 기록, 피드형 타임라인 기능 구현",
+        "UI/UX를 직접 설계하고 디자인 자산 및 컴포넌트 구조화",
+        "개인의 취미 지속과 동기 부여를 목표로 한 서비스 기획"
+      ],
+      "link": null
+    }
+  ],
+  "workStyle": [
+    "운영 환경에서 실제로 동작하는 코드를 작성하는 것이 중요하다고 생각합니다. 개발 단계에서만 잘 동작하는 것이 아니라, 트래픽이 몰리고 예외 상황이 발생해도 안정적으로 동작할 수 있도록 설계하는 것을 우선시합니다.",
+    "성능 문제가 발생했을 때, 단순히 하드웨어를 늘리는 것이 아니라 데이터 흐름과 구조를 분석해서 근본적인 해결책을 찾으려고 합니다. 슬로우 쿼리를 개선하거나 API 구조를 리팩토링하는 것처럼요.",
+    "코드는 한 번 쓰고 끝나는 것이 아니라 계속 수정되고 확장됩니다. 그래서 나중에 다른 사람이 봤을 때도 이해하기 쉽고, 수정하기 쉬운 코드를 쓰려고 노력합니다. 명확한 책임 분리와 적절한 추상화가 중요하다고 생각해요.",
+    "개발자는 혼자 일하는 직업이 아니라고 생각합니다. 기획자, 디자이너, 프론트엔드 개발자와 함께 일하면서 전체적인 흐름을 이해하고, 서로의 업무를 존중하며 소통하는 것이 좋은 결과를 만들어낸다고 믿습니다."
+  ]
 }
