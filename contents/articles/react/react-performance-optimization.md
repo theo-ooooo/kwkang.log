@@ -1,6 +1,6 @@
 ---
 title: "React 성능 최적화 - 렌더링 최소화와 메모이제이션 전략"
-date: "2026-02-15"
+date: "2026-02-10"
 tag: "react,performance,optimization"
 ---
 

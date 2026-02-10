@@ -1,6 +1,6 @@
 ---
 title: "React Error Boundary - 에러 처리와 사용자 경험 개선"
-date: "2026-02-12"
+date: "2026-02-10"
 tag: "react,error-boundary,error-handling"
 ---
 

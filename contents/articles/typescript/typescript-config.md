@@ -1,6 +1,6 @@
 ---
 title: "TypeScript tsconfig.json 완전 정리"
-date: "2026-03-03"
+date: "2026-02-10"
 tag: "typescript,config"
 ---
 

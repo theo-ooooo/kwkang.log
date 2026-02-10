@@ -1,6 +1,6 @@
 ---
 title: "디자인 패턴 - 실무에서 자주 쓰는 패턴"
-date: "2026-03-27"
+date: "2026-02-10"
 tag: "architecture,design-patterns"
 ---
 

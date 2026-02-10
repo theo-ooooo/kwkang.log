@@ -1,6 +1,6 @@
 ---
 title: "단위 테스트 - 함수와 모듈 테스트 작성"
-date: "2026-03-18"
+date: "2026-02-10"
 tag: "testing,unit-test"
 ---
 

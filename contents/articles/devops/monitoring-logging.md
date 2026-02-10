@@ -1,6 +1,6 @@
 ---
 title: "모니터링과 로깅 - 프로덕션 시스템 관찰"
-date: "2026-03-14"
+date: "2026-02-10"
 tag: "monitoring,logging,observability"
 ---
 

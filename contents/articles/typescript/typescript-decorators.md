@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 데코레이터 - 클래스와 메서드 메타데이터"
-date: "2026-03-02"
+date: "2026-02-10"
 tag: "typescript,decorators"
 ---
 

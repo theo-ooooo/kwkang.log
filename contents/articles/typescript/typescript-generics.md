@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 제네릭 심화 - 제약 조건과 고급 패턴"
-date: "2026-02-27"
+date: "2026-02-10"
 tag: "typescript,generics"
 ---
 

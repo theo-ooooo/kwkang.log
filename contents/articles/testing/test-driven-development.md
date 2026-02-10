@@ -1,6 +1,6 @@
 ---
 title: "TDD - 테스트 주도 개발"
-date: "2026-03-21"
+date: "2026-02-10"
 tag: "testing,tdd"
 ---
 

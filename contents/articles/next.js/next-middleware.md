@@ -1,6 +1,6 @@
 ---
 title: "Next.js Middleware - 요청 가로채기와 엣지 런타임"
-date: "2026-02-20"
+date: "2026-02-10"
 tag: "next.js,middleware,edge"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "E2E 테스트 - 사용자 시나리오 기반 테스트"
-date: "2026-03-20"
+date: "2026-02-10"
 tag: "testing,e2e,cypress,playwright"
 ---
 

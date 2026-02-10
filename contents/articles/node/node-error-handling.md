@@ -1,6 +1,6 @@
 ---
 title: "Node.js 에러 처리 - 비동기 에러 핸들링 패턴"
-date: "2026-03-08"
+date: "2026-02-10"
 tag: "node.js,error-handling"
 ---
 

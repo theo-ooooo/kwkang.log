@@ -1,6 +1,6 @@
 ---
 title: "Next.js 캐싱 전략 - ISR, SSG, SSR 캐시 제어"
-date: "2026-02-22"
+date: "2026-02-10"
 tag: "next.js,caching,isr,ssg,ssr"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Next.js Metadata API - SEO와 소셜 미디어 최적화"
-date: "2026-02-24"
+date: "2026-02-10"
 tag: "next.js,metadata,seo"
 ---
 

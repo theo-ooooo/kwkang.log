@@ -1,6 +1,6 @@
 ---
 title: "마이크로서비스 아키텍처 - 분산 시스템 설계"
-date: "2026-03-25"
+date: "2026-02-10"
 tag: "architecture,microservices"
 ---
 

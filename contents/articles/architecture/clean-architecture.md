@@ -1,6 +1,6 @@
 ---
 title: "Clean Architecture - 의존성 규칙과 레이어 분리"
-date: "2026-03-23"
+date: "2026-02-10"
 tag: "architecture,clean-architecture"
 ---
 

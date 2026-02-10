@@ -1,6 +1,6 @@
 ---
 title: "Node.js 보안 - 실무 보안 체크리스트"
-date: "2026-03-10"
+date: "2026-02-10"
 tag: "node.js,security"
 ---
 

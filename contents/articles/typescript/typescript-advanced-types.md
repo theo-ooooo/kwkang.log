@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 고급 타입 - 유틸리티 타입과 조건부 타입"
-date: "2026-02-26"
+date: "2026-02-10"
 tag: "typescript,advanced-types"
 ---
 

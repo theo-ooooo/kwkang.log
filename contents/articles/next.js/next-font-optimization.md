@@ -1,6 +1,6 @@
 ---
 title: "Next.js 폰트 최적화 - next/font로 웹폰트 성능 개선"
-date: "2026-02-23"
+date: "2026-02-10"
 tag: "next.js,font,optimization"
 ---
 

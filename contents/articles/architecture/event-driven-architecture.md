@@ -1,6 +1,6 @@
 ---
 title: "이벤트 기반 아키텍처 - 느슨한 결합과 확장성"
-date: "2026-03-26"
+date: "2026-02-10"
 tag: "architecture,event-driven"
 ---
 

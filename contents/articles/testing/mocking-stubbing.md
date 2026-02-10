@@ -1,6 +1,6 @@
 ---
 title: "Mocking과 Stubbing - 테스트 격리와 제어"
-date: "2026-03-22"
+date: "2026-02-10"
 tag: "testing,mocking,stubbing"
 ---
 

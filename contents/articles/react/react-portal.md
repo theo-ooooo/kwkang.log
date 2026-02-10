@@ -1,6 +1,6 @@
 ---
 title: "React Portal - DOM 트리 밖으로 컴포넌트 렌더링하기"
-date: "2026-02-13"
+date: "2026-02-10"
 tag: "react,portal,dom"
 ---
 

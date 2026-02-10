@@ -1,6 +1,6 @@
 ---
 title: "Jest 기초 - JavaScript 테스트 프레임워크"
-date: "2026-03-17"
+date: "2026-02-10"
 tag: "testing,jest"
 ---
 

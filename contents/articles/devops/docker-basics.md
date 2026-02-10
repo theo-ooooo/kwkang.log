@@ -1,6 +1,6 @@
 ---
 title: "Docker 기초 - 컨테이너와 이미지 이해하기"
-date: "2026-03-11"
+date: "2026-02-10"
 tag: "docker,containerization"
 ---
 

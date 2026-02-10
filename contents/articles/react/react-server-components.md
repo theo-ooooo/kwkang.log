@@ -1,6 +1,6 @@
 ---
 title: "React Server Components - 서버에서 렌더링되는 컴포넌트"
-date: "2026-02-17"
+date: "2026-02-10"
 tag: "react,server-components,next.js"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "통합 테스트 - 시스템 컴포넌트 간 상호작용 검증"
-date: "2026-03-19"
+date: "2026-02-10"
 tag: "testing,integration-test"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 타입 가드 - 런타임 타입 체크와 타입 좁히기"
-date: "2026-03-01"
+date: "2026-02-10"
 tag: "typescript,type-guards,type-narrowing"
 ---
 

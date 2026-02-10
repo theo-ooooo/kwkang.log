@@ -1,6 +1,6 @@
 ---
 title: "SOLID 원칙 - 객체지향 설계 원칙"
-date: "2026-03-28"
+date: "2026-02-10"
 tag: "architecture,solid,oop"
 ---
 

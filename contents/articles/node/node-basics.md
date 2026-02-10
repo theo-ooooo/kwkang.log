@@ -1,6 +1,6 @@
 ---
 title: "Node.js 기초 - 이벤트 루프와 비동기 처리"
-date: "2026-03-05"
+date: "2026-02-10"
 tag: "node.js,async,event-loop"
 ---
 

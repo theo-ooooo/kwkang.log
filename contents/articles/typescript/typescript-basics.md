@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 기초 - 타입 시스템과 기본 문법"
-date: "2026-02-25"
+date: "2026-02-10"
 tag: "typescript,basics"
 ---
 

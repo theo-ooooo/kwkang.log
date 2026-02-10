@@ -1,6 +1,6 @@
 ---
 title: "CI/CD 파이프라인 - 자동화된 배포 전략"
-date: "2026-03-13"
+date: "2026-02-10"
 tag: "ci-cd,devops,automation"
 ---
 

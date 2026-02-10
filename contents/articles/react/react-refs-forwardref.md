@@ -1,6 +1,6 @@
 ---
 title: "React ref와 forwardRef - DOM 접근과 컴포넌트 간 ref 전달"
-date: "2026-02-14"
+date: "2026-02-10"
 tag: "react,ref,forwardref"
 ---
 

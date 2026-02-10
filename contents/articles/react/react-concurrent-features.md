@@ -1,6 +1,6 @@
 ---
 title: "React Concurrent Features - useTransition과 useDeferredValue"
-date: "2026-02-18"
+date: "2026-02-10"
 tag: "react,concurrent,useTransition,useDeferredValue"
 ---
 

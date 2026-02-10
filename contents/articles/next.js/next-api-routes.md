@@ -1,6 +1,6 @@
 ---
 title: "Next.js API Routes - 서버리스 함수로 백엔드 구현"
-date: "2026-02-21"
+date: "2026-02-10"
 tag: "next.js,api-routes,serverless"
 ---
 

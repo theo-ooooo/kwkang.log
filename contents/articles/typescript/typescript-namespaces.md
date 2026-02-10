@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 네임스페이스 - 모듈과 네임스페이스 비교"
-date: "2026-03-04"
+date: "2026-02-10"
 tag: "typescript,namespaces,modules"
 ---
 

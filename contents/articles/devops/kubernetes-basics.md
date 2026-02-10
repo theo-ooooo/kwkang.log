@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes 기초 - 컨테이너 오케스트레이션"
-date: "2026-03-12"
+date: "2026-02-10"
 tag: "kubernetes,k8s,orchestration"
 ---
 

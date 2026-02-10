@@ -1,6 +1,6 @@
 ---
 title: "Next.js Image 최적화 - 자동 이미지 최적화와 성능 개선"
-date: "2026-02-19"
+date: "2026-02-10"
 tag: "next.js,image,optimization"
 ---
 

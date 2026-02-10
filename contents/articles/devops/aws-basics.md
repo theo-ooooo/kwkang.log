@@ -1,6 +1,6 @@
 ---
 title: "AWS 기초 - 클라우드 인프라 이해하기"
-date: "2026-03-15"
+date: "2026-02-10"
 tag: "aws,cloud,infrastructure"
 ---
 

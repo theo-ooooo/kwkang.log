@@ -1,6 +1,6 @@
 ---
 title: "Domain-Driven Design - 도메인 중심 설계"
-date: "2026-03-24"
+date: "2026-02-10"
 tag: "architecture,ddd,domain-driven-design"
 ---
 

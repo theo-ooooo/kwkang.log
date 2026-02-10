@@ -1,6 +1,6 @@
 ---
 title: "React Testing Library - 사용자 중심 테스트 작성하기"
-date: "2026-02-16"
+date: "2026-02-10"
 tag: "react,testing,testing-library"
 ---
 

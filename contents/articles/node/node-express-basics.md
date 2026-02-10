@@ -1,6 +1,6 @@
 ---
 title: "Express.js 기초 - RESTful API 서버 구축"
-date: "2026-03-07"
+date: "2026-02-10"
 tag: "node.js,express,api"
 ---
 

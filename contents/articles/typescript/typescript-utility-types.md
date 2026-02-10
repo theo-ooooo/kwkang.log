@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 유틸리티 타입 완전 정리"
-date: "2026-02-28"
+date: "2026-02-10"
 tag: "typescript,utility-types"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Terraform 기초 - Infrastructure as Code"
-date: "2026-03-16"
+date: "2026-02-10"
 tag: "terraform,iac,infrastructure"
 ---
 
