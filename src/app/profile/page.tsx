@@ -274,7 +274,7 @@ export default function ProfilePage() {
                 {profile.links.blog}
               </Link>
             </div>
-            <div className="flex items-center gap-3 print:gap-2">
+            {/* <div className="flex items-center gap-3 print:gap-2">
               <FaEnvelope size={16} className="text-gray-500 dark:text-gray-400 print:hidden" />
               <span className="print:hidden">Email: </span>
               <Link
@@ -283,7 +283,7 @@ export default function ProfilePage() {
               >
                 {profile.links.email}
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
