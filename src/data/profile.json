@@ -27,6 +27,7 @@
     "글로벌 서비스 환경에서 다양한 플랫폼 기능을 개발하고, 운영 중 발생하는 <span class=\"font-semibold text-gray-900 dark:text-white\">성능 이슈를 구조적으로 해결</span>해 온 백엔드 개발자입니다.",
     "<span class=\"font-semibold\">Node.js(NestJS)</span>를 주로 사용해서 결제, 이벤트, 관리자 시스템, 운영 자동화 등 서비스 전반의 기능을 직접 설계하고 구현해왔어요. 슬로우 쿼리를 개선하거나 API 구조를 리팩토링하면서 실제 서비스 응답 속도와 안정성을 개선한 경험이 있습니다.",
     "프론트엔드(React, Next.js)도 다뤄봐서 기획·디자인·프론트엔드와 협업할 때도 전체 흐름을 이해하며 문제를 해결할 수 있어요. 최근에는 <span class=\"font-semibold\">Spring Boot, Kotlin, AWS</span>까지 배워서 더 큰 규모의 시스템을 설계하는 경험을 쌓고 있습니다.",
+    "요즘은 <span class=\"font-semibold\">AI/LLM을 실제 서비스에 적용</span>하는 데 집중하고 있어요. <span class=\"font-semibold\">RAG</span>로 도메인 지식을 붙이고, 프롬프트 설계·파인튜닝(LoRA)·이미지 생성(SDXL·IP-Adapter) 파이프라인까지 직접 다뤄봤습니다. 생리주기 앱 <span class=\"font-semibold\">Luna</span>에는 LLM 기반 맞춤 인사이트를, AI 웹툰 플랫폼 <span class=\"font-semibold\">Toonweave</span>에는 세계관을 기억하는 협업 창작 기능을 설계했고, 학습한 내용은 블로그에 LLM 시리즈로 꾸준히 정리하고 있어요.",
     "실무에서 가장 중요하게 생각하는 건 <span class=\"font-semibold\">운영 안정성</span>이에요. 개발할 때만 잘 돌아가는 코드가 아니라, 트래픽이 몰리고 예외 상황이 생겨도 안정적으로 동작할 수 있도록 설계하는 걸 우선시합니다. 데이터베이스 쿼리 최적화, 캐싱 전략, 에러 핸들링 강화 등으로 시스템 안정성을 높여왔어요.",
     "성능 문제가 생기면 하드웨어를 늘리는 것보다는, 데이터 흐름과 구조를 분석해서 근본적인 해결책을 찾으려고 해요. 슬로우 쿼리를 분석해서 인덱스를 추가하거나 쿼리 로직을 개선하고, API 구조를 리팩토링해서 불필요한 DB 호출을 줄이는 식으로 실제 서비스 응답 속도를 크게 개선한 경험이 있습니다.",
     "코드는 한 번 쓰고 끝나는 게 아니라 계속 수정되고 확장되니까, 나중에 다른 사람이 봤을 때도 이해하기 쉽고 수정하기 쉬운 코드를 쓰려고 노력해요. 명확한 책임 분리와 적절한 추상화로 유지보수성을 높이는 걸 중요하게 생각하고, 기존 콜백 기반 비동기 로직을 async/await로 바꿔서 코드 가독성과 유지보수성을 개선한 경험이 있어요.",
@@ -79,6 +80,7 @@
     }
   ],
   "techStack": {
+    "AI / LLM": ["LLM API", "RAG", "프롬프트 엔지니어링", "파인튜닝(LoRA)", "SDXL·IP-Adapter", "fal.ai"],
     "Backend": ["Node.js", "NestJS", "Java", "Spring Boot", "Kotlin", "Python", "Flask", "Ruby on Rails"],
     "Database": ["MySQL", "PostgreSQL", "JPA", "TypeORM"],
     "Infra / DevOps": ["AWS ECS/ECR", "Docker", "GitHub Actions", "GitLab CI", "Nginx", "Gunicorn", "Redis", "Celery", "Fly.io"],
