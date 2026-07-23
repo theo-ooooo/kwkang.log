@@ -13,7 +13,7 @@ export default function Header() {
   const { title, isShow } = useHeaderTitleStore();
   return (
     <div className='flex justify-between items-center p-4 max-w-[768px] sticky mx-auto top-0 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 z-50'>
-      <Link href={"/"} className='font-bold text-lg underline'>
+      <Link href={"/"} className='font-bold text-lg'>
         <Image src={"/images/logo.png"} width={38} height={38} alt='logo' />
       </Link>
       <span

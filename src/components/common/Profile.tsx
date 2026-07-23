@@ -4,21 +4,26 @@ import Link from "next/link";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 export default function Profile() {
-  const { name, links, imageSrc } = profile;
+  const { name, role, description, links, imageSrc } = profile;
 
   return (
-    <div className='flex items-center gap-4 my-8 pb-8 border-b border-gray-200 dark:border-gray-800'>
+    <div className='flex items-center gap-5 my-10 pb-10 border-b border-gray-100 dark:border-gray-800'>
       <Image
         src={imageSrc}
         alt='me'
-        width={64}
-        height={64}
-        className='rounded-full'
+        width={72}
+        height={72}
+        className='rounded-full ring-1 ring-gray-200 dark:ring-gray-700'
         priority
       />
-      <div className='w-full flex flex-col gap-2'>
-        <p className='font-semibold text-lg dark:text-white'>{name}</p>
-        <div className='flex gap-3'>
+      <div className='w-full flex flex-col gap-1.5'>
+        <p className='font-bold text-2xl tracking-tight dark:text-white'>{name}</p>
+        <p className='text-sm text-gray-500 dark:text-gray-400'>
+          <span className='font-semibold text-indigo-600 dark:text-indigo-400'>{role}</span>
+          {" · "}
+          {description}
+        </p>
+        <div className='flex gap-3 mt-1.5'>
           {links.github && (
             <Link 
               href={links.github} 

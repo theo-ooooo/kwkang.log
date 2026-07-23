@@ -18,10 +18,10 @@ export default function Tag({
       ref={ref}
       onClick={() => onClick(tag)}
       className={clsx(
-        "px-4 py-1.5 mx-1 mb-2 text-xs whitespace-pre rounded-md cursor-pointer font-medium transition-colors",
+        "px-3.5 py-1.5 mx-0.5 text-xs whitespace-pre rounded-full cursor-pointer font-semibold transition-colors",
         {
-          "bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900": isSelected,
-          "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700": !isSelected
+          "bg-indigo-600 text-white": isSelected,
+          "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700": !isSelected
         }
       )}
     >
