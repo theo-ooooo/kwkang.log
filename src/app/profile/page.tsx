@@ -21,7 +21,16 @@ function SectionHeading({ children }: { children: ReactNode }) {
 }
 
 export default function ProfilePage() {
-  const { name, nameEn, imageSrc, role, description, links } = profile;
+  const { name, nameEn, birthDate, imageSrc, role, description, links } = profile;
+
+  // 생년월일(YYYY.MM.DD) → 만 나이
+  const age = (() => {
+    const [y, m, d] = birthDate.split(".").map(Number);
+    const now = new Date();
+    let a = now.getFullYear() - y;
+    if (now.getMonth() + 1 < m || (now.getMonth() + 1 === m && now.getDate() < d)) a--;
+    return a;
+  })();
 
   return (
     <>
@@ -56,6 +65,9 @@ export default function ProfilePage() {
                 </div>
                 <p className="text-sm font-medium tracking-wide text-gray-400 dark:text-gray-500">
                   {nameEn}
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  {birthDate} · 만 {age}세
                 </p>
               </div>
 

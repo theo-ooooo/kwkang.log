@@ -1,6 +1,7 @@
 {
   "name": "강경원",
   "nameEn": "Kyung Won Kang",
+  "birthDate": "1996.05.25",
   "imageSrc": "/images/profile.jpeg",
   "role": "Backend Developer",
   "description": "운영 환경에서 신뢰할 수 있는 서비스를 만드는 개발자",
