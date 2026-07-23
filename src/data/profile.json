@@ -42,54 +42,68 @@
     {
       "company": "에스에스알",
       "period": "2025.07 ~ 재직 중",
-      "position": "Backend Developer",
-      "tags": ["Python/Flask", "DevOps"],
+      "position": "Backend Developer · 개발1팀",
+      "tags": ["Node.js", "PostgreSQL", "Python"],
       "description": [
-        "보안 솔루션 플랫폼(SolidStep-CCE) 백엔드 운영 및 기능 고도화",
-        "Python/Flask 기반 API 개발 및 고도화, Celery/Redis 기반 비동기 작업 운영",
-        "Debian + Nginx + Gunicorn 기반 서버 운영 및 로그/배포 환경 관리",
-        "PostgreSQL 기반 쿼리 개선 및 데이터 모델링"
+        "보안·솔루션 플랫폼 SolidStep CCE 백엔드 API 개발 및 운영",
+        "대규모 자산·진단 데이터 조회 API 개선으로 지연 쿼리 제거 및 응답 속도 평균 40% 이상 개선",
+        "PostgreSQL 복잡 집계 쿼리(EXPLAIN ANALYZE) 튜닝 및 CPU 사용률 급증 이슈 해결로 시스템 안정성 확보",
+        "잦은 페이지 재호출로 인한 DB 부하를 분석해 쿼리 개선 + 호출 제한 정책 적용으로 장애 재발 방지",
+        "JIRA 기반 이슈 분석·원인 정리 및 개발/기획팀 커뮤니케이션 주도"
       ]
     },
     {
       "company": "탑코",
       "period": "2021.07 ~ 2025.02",
-      "position": "Backend Developer",
-      "tags": ["Node.js/NestJS"],
+      "position": "Backend Developer · 해외서비스개발팀",
+      "tags": ["Node.js", "MySQL", "AWS"],
       "description": [
-        "글로벌 웹툰 플랫폼 관리자 시스템 및 다국가 결제 백엔드 개발·운영",
-        "기존 콜백 기반 비동기 로직을 async/await 구조로 전환하여 유지보수성 개선 및 버그 발생 감소",
-        "슬로우 쿼리 분석 및 API 구조 리팩토링을 통해 주요 API 응답 속도 대폭 개선",
-        "일본 PG 8종 및 Google Play Billing API 연동을 포함한 다국가 결제 처리 시스템 안정 운영",
-        "룰렛 이벤트 기능 개발 및 혜택 자동 지급 프로세스 구축, 트래픽 집중 구간에서도 안정적인 이벤트 운영 지원"
+        "글로벌 웹툰 플랫폼 결제·정산 백엔드 시스템 개발·운영 (3년 8개월)",
+        "다국가 결제 모듈(PG, Google Play Billing) 연동 및 API 설계",
+        "AWS 기반 운영 환경 구축, S3 + CloudFront로 이미지/정적 리소스 처리 최적화",
+        "결제·정산 핵심 API 성능 개선으로 결제 실패율 감소 및 운영 이슈 대응 시간 단축",
+        "SQL 최적화·인덱스 설계로 대용량 트래픽 환경에서도 안정적인 서비스 유지",
+        "운영 중 발생하는 장애 원인 분석 및 재발 방지 구조 설계"
       ]
     },
     {
       "company": "후스구스",
-      "period": "2021.03 ~ 2021.06",
-      "position": "Frontend Developer",
-      "tags": ["React"],
+      "period": "2021.02 ~ 2021.06",
+      "position": "개발팀 · 사원/팀원",
+      "tags": ["JavaScript", "API"],
       "description": [
-        "React 기반 해외배송 서비스(SPA) 구축",
-        "GraphQL 기반 쇼핑몰 UI 기능 개선 및 유지보수"
+        "해외향 서비스 및 쇼핑몰 프로젝트 기능 개발",
+        "기존 코드 리팩토링으로 유지보수성 개선 및 신규 기능 개발 속도 향상",
+        "프론트–백엔드 간 API 연동 작업 수행"
       ]
+    }
+  ],
+  "education": [
+    {
+      "school": "한국방송통신대학교 (4년제)",
+      "major": "컴퓨터과학과",
+      "period": "2026.03 ~ 재학중",
+      "note": "편입 · 재학중"
     },
     {
-      "company": "퍼플스",
-      "period": "2020.11 ~ 2021.02",
-      "position": "Web Publisher",
-      "tags": ["Web Publishing"],
-      "description": [
-        "반응형 웹 퍼블리싱 및 크로스브라우징 대응"
-      ]
+      "school": "백석문화대학 (2·3년제)",
+      "major": "컴퓨터정보과",
+      "period": "2015.03 ~ 2019.02",
+      "note": "졸업 · 학점 4.0 / 4.5"
+    },
+    {
+      "school": "원종고등학교",
+      "major": "이과계열",
+      "period": "2012.03 ~ 2015.02",
+      "note": "졸업"
     }
   ],
   "techStack": {
     "AI / LLM": ["LLM API 연동", "RAG (검색 증강 생성)", "프롬프트 엔지니어링", "파인튜닝 (LoRA)", "이미지 생성 (SDXL)", "fal.ai"],
     "Backend": ["Node.js", "NestJS", "Java", "Spring Boot", "Kotlin", "Python", "Flask", "Ruby on Rails"],
-    "Database": ["MySQL", "PostgreSQL", "JPA", "TypeORM"],
-    "Infra / DevOps": ["AWS ECS/ECR", "Docker", "GitHub Actions", "GitLab CI", "Nginx", "Gunicorn", "Redis", "Celery", "Fly.io"],
-    "Frontend": ["React", "Next.js", "TypeScript", "React Native", "Flutter"]
+    "Database": ["MySQL", "PostgreSQL", "MariaDB", "MongoDB", "JPA", "TypeORM"],
+    "Infra / DevOps": ["AWS (S3/EC2/CloudFront)", "Docker", "GitHub Actions", "GitLab CI", "Nginx", "Gunicorn", "Redis", "Celery", "Fly.io"],
+    "Frontend": ["React", "Next.js", "TypeScript", "Vue.js", "React Native", "Flutter"]
   },
   "projects": [
     {

@@ -188,6 +188,26 @@ export default function ProfilePage() {
           </ol>
         </section>
 
+        {/* ── 학력 ── */}
+        <section>
+          <SectionHeading>학력</SectionHeading>
+          <ol className="relative ms-2 border-s border-gray-200 dark:border-gray-700 print:border-s-0 print:ms-0">
+            {profile.education.map((edu, index) => (
+              <li key={index} className="career-item relative ms-6 pb-8 last:pb-0 print:ms-0 print:pb-3">
+                <span className="absolute -start-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-indigo-500 dark:border-gray-900 print:hidden" />
+                <div className="flex flex-col gap-0.5 md:flex-row md:items-baseline md:justify-between">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white md:text-lg">
+                    {edu.school}
+                    <span className="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">{edu.major}</span>
+                  </h3>
+                  <span className="text-xs text-gray-400 dark:text-gray-500 md:text-sm">{edu.period}</span>
+                </div>
+                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{edu.note}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
         {/* ── 기술 스택 ── */}
         <section>
           <SectionHeading>기술 스택</SectionHeading>
