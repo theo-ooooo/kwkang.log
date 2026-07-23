@@ -24,9 +24,17 @@ export default async function Home({
   }
 
   return (
-    <div className='w-full my-8 flex flex-col gap-8'>
+    <div className='w-full my-8 flex flex-col gap-6'>
       <Profile />
       <TagSeletor tags={["All", ...tags]} />
+      <div className='flex items-baseline justify-between px-1'>
+        <h2 className='text-lg font-extrabold tracking-tight dark:text-white'>
+          {selectedTag && selectedTag !== "All" ? `#${selectedTag}` : "최근 글"}
+        </h2>
+        <span className='text-sm font-medium text-gray-400 dark:text-gray-500'>
+          {articles.length}개의 글
+        </span>
+      </div>
       <ArticleList articles={articles} />
     </div>
   );
