@@ -9,8 +9,12 @@ export default function ThemeToggle() {
   const { theme, handleTheme } = useTheme();
 
   return (
-    <button onClick={handleTheme}>
-      {theme === Theme.light ? <FiSun size={20} /> : <FiMoon size={20} />}
+    <button
+      onClick={handleTheme}
+      aria-label='테마 전환'
+      className='flex h-9 w-9 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white'
+    >
+      {theme === Theme.light ? <FiSun size={18} /> : <FiMoon size={18} />}
     </button>
   );
 }
