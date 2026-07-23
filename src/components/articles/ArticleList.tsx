@@ -13,14 +13,15 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
   const [featured, ...rest] = articles;
 
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col'>
       <ArticleDescView article={featured} featured />
       {rest.length > 0 && (
-        <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
+        <>
+          <div className='my-2 border-t border-gray-100 dark:border-gray-800' />
           {rest.map((article, index) => (
             <ArticleDescView article={article} key={index} />
           ))}
-        </div>
+        </>
       )}
     </div>
   );
