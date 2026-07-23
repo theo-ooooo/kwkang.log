@@ -88,7 +88,7 @@
     {
       "title": "Luna — AI 생리주기 추적 앱",
       "type": "Mobile Service Project",
-      "status": "개발중",
+      "status": "개발완료",
       "description": [
         "Ruby on Rails 8 API + React Native(Expo) 기반 생리주기 추적 서비스",
         "가중평균 기반 주기 예측과 배란·가임기 계산 알고리즘 설계",
@@ -96,6 +96,71 @@
         "Fly.io + PostgreSQL 배포 및 정기 예측 재계산 잡(Solid Queue) 운영"
       ],
       "link": "https://apps.apple.com/us/app/luna-%EC%83%9D%EB%A6%AC%EC%A3%BC%EA%B8%B0-%EB%8B%AC%EB%A0%A5/id6769269495"
+    },
+    {
+      "title": "재고콕 — QR 재고관리 SaaS",
+      "type": "Side Project",
+      "status": "개발중",
+      "description": [
+        "Spring Boot 3 + Java 21 기반 재고관리 SaaS 백엔드 API 설계·구현",
+        "QR 스캔 기반 입출고·재고 추적 기능",
+        "Next.js + TypeScript 웹 프론트엔드",
+        "토스페이먼츠 구독 결제(14일 무료 체험) 연동"
+      ],
+      "link": "https://github.com/theo-ooooo/jaegokok-server"
+    },
+    {
+      "title": "Crimp — 클라이밍 커뮤니티",
+      "type": "Side Project",
+      "status": "개발중",
+      "description": [
+        "국내 클라이머를 위한 디지털 홈",
+        "암장·루트 정보, 등반 로그, 크루 기능 기획·개발",
+        "TypeScript 기반 풀스택 구현"
+      ],
+      "link": "https://github.com/theo-ooooo/crimp"
+    },
+    {
+      "title": "웹툰 열람 플랫폼",
+      "type": "Side Project",
+      "status": "개발완료",
+      "description": [
+        "Spring Boot 3.5 + Java 21 백엔드 API 설계·구현",
+        "Next.js 16 + React 19 + TypeScript 프론트엔드",
+        "작품·회차·뷰어 등 웹툰 열람 기능 구현"
+      ],
+      "link": "https://github.com/theo-ooooo/webtoon-backend"
+    },
+    {
+      "title": "Toonweave — AI 릴레이 웹툰 플랫폼",
+      "type": "Side Project",
+      "status": "개발중",
+      "description": [
+        "AI가 세계관을 기억하고 여러 사람이 이어 그리는 협업형 웹툰 IP 플랫폼",
+        "Kotlin + Spring Boot 백엔드, Next.js 프론트엔드",
+        "SDXL + IP-Adapter 기반 캐릭터 일관성 AI 컷 생성 파이프라인 검증"
+      ],
+      "link": null
+    },
+    {
+      "title": "가자 (Gaja) — 대중교통 경로 추적",
+      "type": "Side Project",
+      "status": "개발완료",
+      "description": [
+        "지하철·버스 경로를 추적하는 대중교통 서비스",
+        "TypeScript 기반 웹 구현"
+      ],
+      "link": "https://github.com/theo-ooooo/gaja"
+    },
+    {
+      "title": "일정 공유 캘린더",
+      "type": "Side Project",
+      "status": "개발완료",
+      "description": [
+        "Python 기반 일정 공유 서버 + TypeScript 프론트엔드",
+        "캘린더 생성·공유 기능 구현"
+      ],
+      "link": "https://github.com/theo-ooooo/Calendar-Server"
     },
     {
       "title": "Lunatalk — 전자상거래 플랫폼",
