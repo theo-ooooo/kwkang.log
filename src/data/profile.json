@@ -79,12 +79,24 @@
     }
   ],
   "techStack": {
-    "Backend": ["Node.js", "NestJS", "Java", "Spring Boot", "Python", "Flask"],
+    "Backend": ["Node.js", "NestJS", "Java", "Spring Boot", "Kotlin", "Python", "Flask", "Ruby on Rails"],
     "Database": ["MySQL", "PostgreSQL", "JPA", "TypeORM"],
-    "Infra / DevOps": ["AWS ECS/ECR", "Docker", "GitHub Actions", "GitLab CI", "Nginx", "Gunicorn", "Redis", "Celery"],
-    "Frontend": ["React", "Next.js", "TypeScript", "Flutter"]
+    "Infra / DevOps": ["AWS ECS/ECR", "Docker", "GitHub Actions", "GitLab CI", "Nginx", "Gunicorn", "Redis", "Celery", "Fly.io"],
+    "Frontend": ["React", "Next.js", "TypeScript", "React Native", "Flutter"]
   },
   "projects": [
+    {
+      "title": "Luna — AI 생리주기 추적 앱",
+      "type": "Mobile Service Project",
+      "status": "개발중",
+      "description": [
+        "Ruby on Rails 8 API + React Native(Expo) 기반 생리주기 추적 서비스",
+        "가중평균 기반 주기 예측과 배란·가임기 계산 알고리즘 설계",
+        "LLM 기반 맞춤형 데일리 인사이트로 기존 트래킹 앱과 차별화",
+        "Fly.io + PostgreSQL 배포 및 정기 예측 재계산 잡(Solid Queue) 운영"
+      ],
+      "link": null
+    },
     {
       "title": "Lunatalk — 전자상거래 플랫폼",
       "type": "Side Project",
