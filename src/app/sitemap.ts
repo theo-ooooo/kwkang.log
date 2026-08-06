@@ -1,15 +1,9 @@
-import { DOMAIN_URL } from "@/constants/common";
-import { getArticlesPaths } from "@/lib/articles/list";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const articlePaths = getArticlesPaths();
-
-  const articleSitemaps = articlePaths.map((article) => {
-    return {
-      url: `${DOMAIN_URL}${article.route}`,
-    };
-  });
-
-  return [{ url: DOMAIN_URL, lastModified: new Date() }, ...articleSitemaps];
+  const base = "https://kwkang.net";
+  return [
+    { url: base, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
+    { url: `${base}/profile`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+  ];
 }

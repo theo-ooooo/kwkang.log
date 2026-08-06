@@ -43,7 +43,11 @@
       "company": "에스에스알",
       "period": "2025.07 ~ 재직 중",
       "position": "Backend Developer · 개발1팀",
-      "tags": ["Node.js", "PostgreSQL", "Python"],
+      "tags": [
+        "Node.js",
+        "PostgreSQL",
+        "Python"
+      ],
       "description": [
         "보안·솔루션 플랫폼 SolidStep CCE 백엔드 API 개발 및 운영",
         "대규모 자산·진단 데이터 조회 API 개선으로 지연 쿼리 제거 및 응답 속도 평균 40% 이상 개선",
@@ -56,7 +60,11 @@
       "company": "탑코",
       "period": "2021.07 ~ 2025.02",
       "position": "Backend Developer · 해외서비스개발팀",
-      "tags": ["Node.js", "MySQL", "AWS"],
+      "tags": [
+        "Node.js",
+        "MySQL",
+        "AWS"
+      ],
       "description": [
         "글로벌 웹툰 플랫폼 결제·정산 백엔드 시스템 개발·운영 (3년 8개월)",
         "다국가 결제 모듈(PG, Google Play Billing) 연동 및 API 설계",
@@ -70,7 +78,10 @@
       "company": "후스구스",
       "period": "2021.02 ~ 2021.06",
       "position": "개발팀 · 사원/팀원",
-      "tags": ["JavaScript", "API"],
+      "tags": [
+        "JavaScript",
+        "API"
+      ],
       "description": [
         "해외향 서비스 및 쇼핑몰 프로젝트 기능 개발",
         "기존 코드 리팩토링으로 유지보수성 개선 및 신규 기능 개발 속도 향상",
@@ -99,13 +110,65 @@
     }
   ],
   "techStack": {
-    "AI / LLM": ["LLM API 연동", "RAG (검색 증강 생성)", "프롬프트 엔지니어링", "파인튜닝 (LoRA)", "이미지 생성 (SDXL)", "fal.ai"],
-    "Backend": ["Node.js", "NestJS", "Java", "Spring Boot", "Kotlin", "Python", "Flask", "Ruby on Rails"],
-    "Database": ["MySQL", "PostgreSQL", "MariaDB", "MongoDB", "JPA", "TypeORM"],
-    "Infra / DevOps": ["AWS (S3/EC2/CloudFront)", "Docker", "GitHub Actions", "GitLab CI", "Nginx", "Gunicorn", "Redis", "Celery", "Fly.io"],
-    "Frontend": ["React", "Next.js", "TypeScript", "Vue.js", "React Native", "Flutter"]
+    "AI / LLM": [
+      "LLM API 연동",
+      "RAG (검색 증강 생성)",
+      "프롬프트 엔지니어링",
+      "파인튜닝 (LoRA)",
+      "이미지 생성 (SDXL)",
+      "fal.ai"
+    ],
+    "Backend": [
+      "Node.js",
+      "NestJS",
+      "Java",
+      "Spring Boot",
+      "Kotlin",
+      "Python",
+      "Flask",
+      "Ruby on Rails"
+    ],
+    "Database": [
+      "MySQL",
+      "PostgreSQL",
+      "MariaDB",
+      "MongoDB",
+      "JPA",
+      "TypeORM"
+    ],
+    "Infra / DevOps": [
+      "AWS (S3/EC2/CloudFront)",
+      "Docker",
+      "GitHub Actions",
+      "GitLab CI",
+      "Nginx",
+      "Gunicorn",
+      "Redis",
+      "Celery",
+      "Fly.io"
+    ],
+    "Frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Vue.js",
+      "React Native",
+      "Flutter"
+    ]
   },
   "projects": [
+    {
+      "title": "백틱(Backtick) — 개발자 블로그 플랫폼",
+      "type": "Web Service Project",
+      "status": "운영중",
+      "description": [
+        "Next.js 16(App Router) + Prisma + Supabase 기반 멀티유저 개발 블로그 플랫폼",
+        "국내 기술블로그 9곳 RSS/API 수집 큐레이션 피드로 콜드스타트 해결 (velog 트렌딩 API 연동)",
+        "GitHub OAuth 로그인, 마크다운 에디터, 댓글(2뎁스+멘션)·좋아요·조회수·읽음 동기화",
+        "Vercel(서울 리전) 배포 + GitHub Actions 시간별 수집 크론 운영 — backtick.blog"
+      ],
+      "link": "https://backtick.blog"
+    },
     {
       "title": "Luna — AI 생리주기 추적 앱",
       "type": "Mobile Service Project",
