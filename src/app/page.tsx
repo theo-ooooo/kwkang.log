@@ -7,58 +7,49 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className='flex w-full flex-col py-14 sm:py-20'>
-      {/* 백틱 이사 히어로 — backtick.blog 브랜드 카드 */}
-      <div className='relative overflow-hidden rounded-[28px] bg-[#1a1815] px-7 py-14 text-center sm:px-12 sm:py-20'>
-        {/* 은은한 코랄 글로우 */}
-        <div
-          aria-hidden
-          className='pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-[#e0533d]/25 blur-[90px]'
-        />
-        <div
-          aria-hidden
-          className='pointer-events-none absolute -bottom-32 -right-16 h-64 w-64 rounded-full bg-[#e0533d]/10 blur-[80px]'
-        />
+    <div className='w-full py-10 sm:py-14'>
+      {/* 백틱 이사 안내 — 프로필 카드와 같은 디자인 언어 */}
+      <section className='overflow-hidden rounded-3xl border border-gray-100 bg-white dark:border-gray-800 dark:bg-gray-900'>
+        {/* 상단 배너 */}
+        <div className='h-24 bg-gradient-to-r from-indigo-500/90 to-violet-500/90' />
 
-        <div className='relative'>
-          <div className='mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white/[.06] font-mono text-4xl font-semibold text-[#e0533d] ring-1 ring-white/10'>
+        <div className='px-6 pb-8 sm:px-10'>
+          {/* 배너에 걸치는 백틱 타일 */}
+          <div className='-mt-9 flex h-[72px] w-[72px] items-center justify-center rounded-2xl bg-gray-900 font-mono text-3xl font-semibold text-[#e0533d] ring-4 ring-white dark:bg-gray-950 dark:ring-gray-900'>
             `
           </div>
 
-          <p className='mt-7 font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-white/40'>
-            kwkang.log → backtick.blog
-          </p>
-          <h1 className='mt-3 text-[26px] font-extrabold leading-tight tracking-tight text-white sm:text-[34px]'>
-            블로그가 <span className='text-[#e0533d]'>백틱</span>으로
-            <br className='sm:hidden' /> 이사했어요
-          </h1>
-          <p className='mx-auto mt-4 max-w-[420px] text-[14px] leading-relaxed text-white/55 sm:text-[15px]'>
-            여기 있던 글 전부와 새 글은 직접 만든 개발 블로그 플랫폼{" "}
-            <strong className='font-bold text-white/85'>backtick.blog</strong>
-            에서 볼 수 있어요.
-          </p>
+          <div className='mt-5'>
+            <span className='rounded-full bg-indigo-50 px-2.5 py-0.5 text-[11px] font-bold text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300'>
+              공지
+            </span>
+            <h1 className='mt-3 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white'>
+              블로그가 <span className='text-[#e0533d]'>백틱</span>으로 이사했어요
+            </h1>
+            <p className='mt-2.5 max-w-[480px] text-sm leading-relaxed text-gray-500 dark:text-gray-400'>
+              여기 있던 글 전부와 새 글은 직접 만든 개발 블로그 플랫폼{" "}
+              <strong className='font-semibold text-gray-800 dark:text-gray-200'>backtick.blog</strong>
+              에서 볼 수 있어요. velog·기업 기술블로그 큐레이션과 AI 요약도 함께요.
+            </p>
+          </div>
 
-          <div className='mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row'>
+          <div className='mt-7 flex flex-col gap-2.5 sm:flex-row'>
             <a
               href='https://backtick.blog/@theo'
-              className='inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#e0533d] px-7 py-3 text-[14px] font-bold text-white shadow-[0_8px_24px_rgba(224,83,61,.35)] transition hover:bg-[#c9432f] sm:w-auto'
+              className='inline-flex items-center justify-center gap-1.5 rounded-full bg-gray-900 px-6 py-2.5 text-sm font-bold text-white transition hover:opacity-85 dark:bg-white dark:text-gray-900'
             >
               백틱에서 글 보기
               <span aria-hidden>→</span>
             </a>
             <Link
               href='/profile'
-              className='inline-flex w-full items-center justify-center rounded-full border border-white/15 px-7 py-3 text-[14px] font-bold text-white/80 transition hover:border-white/40 hover:text-white sm:w-auto'
+              className='inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-2.5 text-sm font-bold text-gray-700 transition hover:border-gray-900 dark:border-gray-700 dark:text-gray-300 dark:hover:border-white'
             >
               프로필 보기
             </Link>
           </div>
-
-          <p className='mt-8 font-mono text-[11.5px] text-white/30'>
-            velog · 기업 기술블로그 큐레이션 + AI 요약까지, 백틱에서
-          </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
