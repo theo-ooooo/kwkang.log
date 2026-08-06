@@ -22,7 +22,7 @@ export default function Home() {
         </p>
         <div className='mt-6 flex items-center justify-center gap-3'>
           <a
-            href='https://backtick.blog/@kwkang'
+            href='https://backtick.blog/@theo'
             className='rounded-full bg-gray-900 dark:bg-white px-5 py-2.5 text-sm font-bold text-white dark:text-gray-900 transition hover:opacity-85'
           >
             백틱에서 글 보기 →
