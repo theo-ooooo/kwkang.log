@@ -6,21 +6,24 @@ import TopButton from "@/components/common/Top";
 import ThemeProvider from "@/components/providers/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import profile from "@/data/profile.json";
+import { DOMAIN_URL } from "@/constants/common";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(DOMAIN_URL),
   title: {
-    template: "%s | Theo.log",
-    default: "Theo.log",
+    template: "%s | kwkang.log",
+    default: "강경원 — Backend Developer | kwkang.log",
   },
-  description: "Theo의 개발 블로그 입니다.",
+  description: "백엔드 개발자 강경원의 소개, 경력과 프로젝트. 기술 기록은 백틱에서 만나요.",
   other: {
     ["naver-site-verification"]: "4aa506f808f61858b1492263f589d1148039bbfb",
   },
   openGraph: {
-    title: "Theo.log",
-    description: "Theo의 개발 블로그 입니다.",
+    title: "강경원 — Backend Developer | kwkang.log",
+    description: "백엔드 개발자 강경원의 소개, 경력과 프로젝트",
     url: "https://kwkang.net",
-    siteName: "Theo.log",
+    siteName: "kwkang.log",
     images: [
       {
         url: `/api/og`,
@@ -41,11 +44,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko' suppressHydrationWarning>
-      <body className='bg-gray-50 dark:bg-gray-950'>
+      <body>
         <ThemeProvider>
-          <Header />
-          <main className='flex max-w-[768px] mx-auto px-2'>{children}</main>
-          <Footer />
+          <a href="#main-content" className="skip-link">본문으로 건너뛰기</a>
+          <div className="site-frame">
+            <Header githubUrl={profile.links.github} />
+            <main id="main-content" className="site-main site-container" tabIndex={-1}>{children}</main>
+            <Footer />
+          </div>
           <TopButton />
         </ThemeProvider>
         <Analytics />

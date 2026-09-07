@@ -1,16 +1,14 @@
-"use client";
-
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 
 export default function NotFound() {
-  const router = useRouter();
   return (
-    <div className='flex py-3 flex-col gap-4 justify-center items-center w-full h-svh'>
-      <h2 className='text-5xl font-semibold text-sky-500'>NOT-FOUND</h2>
-      {/* <p className='text-base'>페이지의 오류가 발생하였습니다.</p> */}
-      <button className='text-sm  p-2' onClick={() => router.push("/")}>
-        메인으로 돌아가기
-      </button>
-    </div>
+    <section className="status-page">
+      <p className="status-code" aria-hidden="true">404<span>.</span></p>
+      <p className="eyebrow">PAGE NOT FOUND</p>
+      <h1>페이지를 찾을 수 없어요.</h1>
+      <p className="status-description">주소가 바뀌었거나 더 이상 제공하지 않는 페이지예요.</p>
+      <Link href="/" className="button button-primary">홈으로 돌아가기 <FiArrowRight aria-hidden="true" /></Link>
+    </section>
   );
 }

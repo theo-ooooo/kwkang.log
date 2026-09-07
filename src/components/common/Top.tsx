@@ -1,31 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { GoMoveToTop } from "react-icons/go";
+import { FiArrowUp } from "react-icons/fi";
 
 export default function TopButton() {
-  const [position, setPosition] = useState(0);
-  const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  function onScroll() {
-    setPosition(window.scrollY);
-  }
-
+  const [visible, setVisible] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
+    const onScroll = () => setVisible(window.scrollY > 400);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
+  if (!visible) return null;
   return (
-    position > 0 && (
-      <div
-        className='fixed bottom-3 right-3 md:bottom-10 md:right-10 rounded-full cursor-pointer border-[1px] border-gray-300 p-3 hover:opacity-70 bg-white dark:text-black'
-        onClick={handleClick}
-      >
-        <GoMoveToTop className='text-xl md:text-3xl' />
-      </div>
-    )
+    <button
+      type="button"
+      className="icon-button top-button"
+      aria-label="맨 위로 이동"
+      onClick={() => window.scrollTo({
+        top: 0,
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+      })}
+    >
+      <FiArrowUp size={20} aria-hidden="true" />
+    </button>
   );
 }
