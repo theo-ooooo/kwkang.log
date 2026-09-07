@@ -79,7 +79,10 @@ p, li { word-break: keep-all; }
 .button-secondary:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 .home-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 3.5rem; min-height: calc(100svh - 170px); padding-block: 4rem; }
 .home-introduction { padding-block: 1rem; min-width: 0; }
-.home-introduction .eyebrow { margin-bottom: 1.65rem; }
+.home-kicker { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.65rem; }
+.home-kicker .eyebrow { margin: 0; }
+.profile-photo { flex-shrink: 0; object-fit: cover; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.home-photo { width: 80px; height: 80px; }
 .home-introduction h1 { font-size: clamp(4rem, 7.6vw, 6.4rem); line-height: 1.12; font-weight: 800; letter-spacing: -.07em; }
 .home-name-en { margin-top: .75rem; font-size: clamp(1.3rem, 2.2vw, 1.9rem); letter-spacing: -.025em; color: var(--muted); }
 .home-description { margin-top: 2.5rem; font-size: 1.15rem; font-weight: 600; line-height: 1.7; max-width: 27rem; }
@@ -108,7 +111,8 @@ p, li { word-break: keep-all; }
 .profile-page { padding-top: 3.5rem; padding-bottom: 4rem; }
 .profile-masthead { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 1.75rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
 .profile-identity { display: flex; align-items: center; gap: 2rem; }
-.profile-monogram { padding-right: 2rem; border-right: 1px solid var(--line); font-size: 4.5rem; font-weight: 800; letter-spacing: -.1em; line-height: 1.15; }
+.resume-photo { width: 112px; height: 112px; }
+.profile-identity > div { min-width: 0; }
 .profile-identity .eyebrow { margin-bottom: .4rem; letter-spacing: .08em; }
 .profile-identity h1 { font-size: 2.3rem; letter-spacing: -.06em; line-height: 1.2; font-weight: 750; }
 .profile-role { margin-top: .5rem; color: var(--muted); font-size: 1rem; }
@@ -206,7 +210,7 @@ p, li { word-break: keep-all; }
   .home-layout { grid-template-columns: 1fr; gap: 2.5rem; padding-block: 3rem; min-height: auto; }
   .home-introduction { padding-block: 0; }
   .home-introduction h1 { font-size: clamp(4.3rem, 16vw, 6rem); }
-  .home-introduction .eyebrow { margin-bottom: 1.4rem; }
+  .home-kicker { margin-bottom: 1.4rem; gap: 1rem; }
   .home-name-en { font-size: 1.5rem; }
   .home-description { margin-top: 1.75rem; font-size: 1.0625rem; }
   .home-introduction .button-row { margin-top: 1.75rem; }
@@ -219,7 +223,7 @@ p, li { word-break: keep-all; }
   .profile-page { padding-block: 2rem 3rem; }
   .profile-masthead { gap: 1.4rem 1rem; padding-bottom: 1.75rem; }
   .profile-identity { gap: 1rem; }
-  .profile-monogram { font-size: 3.4rem; padding-right: 1rem; }
+  .resume-photo { width: 88px; height: 88px; }
   .profile-identity h1 { font-size: 1.8rem; }
   .profile-identity .eyebrow { font-size: .75rem; }
   .profile-masthead-actions { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
@@ -248,7 +252,7 @@ p, li { word-break: keep-all; }
   .header-nav { gap: .65rem; }
   .site-container { width: calc(100% - 32px); }
   .strengths-grid { grid-template-columns: 1fr; }
-  .profile-monogram { font-size: 2.8rem; }
+  .resume-photo { width: 72px; height: 72px; }
   .blog-panel { padding-inline: 1.4rem; }
   .blog-panel-copy p { font-size: .9375rem; }
 }
@@ -279,7 +283,7 @@ p, li { word-break: keep-all; }
   .site-container { width: 100%; max-width: none; }
   .profile-page { padding: 0; }
   .profile-masthead { padding-bottom: 12pt; gap: 8pt; }
-  .profile-monogram { font-size: 38pt; }
+  .resume-photo { width: 64pt; height: 64pt; }
   .profile-identity { gap: 16pt; }
   .profile-identity h1 { font-size: 24pt; }
   .profile-masthead-actions { grid-column: auto; }

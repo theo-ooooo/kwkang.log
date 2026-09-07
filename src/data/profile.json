@@ -3,8 +3,8 @@
   "nameEn": "Kyung Won Kang",
   "birthDate": "1996.05.25",
   "imageSrc": "/images/profile.jpeg",
-  "role": "Backend Developer",
-  "description": "성능과 안정성으로 신뢰받는 백엔드 개발자 · 요즘은 AI/LLM을 서비스에 접목합니다",
+  "role": "Full-stack Developer",
+  "description": "사용자 경험부터 서버의 성능과 안정성까지 설계하는 풀스택 개발자 · AI/LLM을 실제 서비스에 접목합니다",
   "links": {
     "github": "https://github.com/theo-ooooo",
     "blog": "https://kwkang.net",
@@ -21,7 +21,7 @@
     },
     {
       "title": "풀스택 · 협업",
-      "description": "백엔드부터 프론트까지, 기획·디자인과 매끄러운 협업"
+      "description": "React·Next.js 화면부터 Node.js·NestJS API까지, 서비스 전체 흐름을 이해하며 협업"
     },
     {
       "title": "AI 적용",
@@ -29,9 +29,9 @@
     }
   ],
   "introduction": [
-    "글로벌 서비스 환경에서 다양한 플랫폼 기능을 개발하고, 운영 중 발생하는 <span class=\"font-semibold text-gray-900 dark:text-white\">성능 이슈를 구조적으로 해결</span>해 온 백엔드 개발자입니다.",
-    "<span class=\"font-semibold\">Node.js(NestJS)</span>를 주로 사용해서 결제, 이벤트, 관리자 시스템, 운영 자동화 등 서비스 전반의 기능을 직접 설계하고 구현해왔어요. 슬로우 쿼리를 개선하거나 API 구조를 리팩토링하면서 실제 서비스 응답 속도와 안정성을 개선한 경험이 있습니다.",
-    "프론트엔드(React, Next.js)도 다뤄봐서 기획·디자인·프론트엔드와 협업할 때도 전체 흐름을 이해하며 문제를 해결할 수 있어요. 최근에는 <span class=\"font-semibold\">Spring Boot, Kotlin, AWS</span>까지 배워서 더 큰 규모의 시스템을 설계하는 경험을 쌓고 있습니다.",
+    "<span class=\"font-semibold text-gray-900 dark:text-white\">사용자가 만나는 화면부터 API와 데이터베이스까지</span>, 서비스의 전체 흐름을 설계하고 구현하는 풀스택 개발자입니다. 글로벌 서비스와 개인 프로젝트를 통해 기능을 만들고, 운영 중 발생하는 성능 이슈를 구조적으로 해결해왔어요.",
+    "<span class=\"font-semibold\">React·Next.js·TypeScript</span>로 웹 화면과 관리자 도구를 만들고, <span class=\"font-semibold\">Node.js·NestJS</span>로 결제, 이벤트, 운영 자동화 등 서비스의 API를 설계하고 구현해왔어요. 사용자 경험과 데이터 흐름을 함께 살피며, 슬로우 쿼리 개선과 API 리팩토링으로 응답 속도와 안정성을 높였습니다.",
+    "프론트엔드와 백엔드를 함께 다루며 화면 구성, API 연동, 데이터 처리와 배포까지 이어지는 제품 개발을 경험했습니다. <span class=\"font-semibold\">Spring Boot·Kotlin·Python</span>도 활용하고, <span class=\"font-semibold\">AWS·Docker</span> 기반 운영 환경까지 다루며 서비스에 맞는 기술을 선택하고 있어요.",
     "요즘은 <span class=\"font-semibold\">AI/LLM을 실제 서비스에 접목</span>하는 데 집중하고 있어요. 사용자의 질문에 맞는 문서를 찾아 답변에 활용하는 <span class=\"font-semibold\">RAG(검색 증강 생성)</span>, 원하는 말투나 그림체를 적은 비용으로 학습시키는 <span class=\"font-semibold\">파인튜닝(LoRA)</span>, 텍스트로 이미지를 만드는 <span class=\"font-semibold\">생성형 이미지 파이프라인</span>까지 직접 다뤄봤습니다. 생리주기 앱 <span class=\"font-semibold\">Luna</span>에는 LLM 기반 맞춤 인사이트를, AI 웹툰 플랫폼 <span class=\"font-semibold\">Toonweave</span>에는 캐릭터·세계관을 기억하는 협업 창작 기능을 붙였고, 배운 내용은 블로그에 LLM 시리즈로 정리하고 있어요.",
     "실무에서 가장 중요하게 생각하는 건 <span class=\"font-semibold\">운영 안정성</span>이에요. 개발할 때만 잘 돌아가는 코드가 아니라, 트래픽이 몰리고 예외 상황이 생겨도 안정적으로 동작할 수 있도록 설계하는 걸 우선시합니다. 데이터베이스 쿼리 최적화, 캐싱 전략, 에러 핸들링 강화 등으로 시스템 안정성을 높여왔어요.",
     "성능 문제가 생기면 하드웨어를 늘리는 것보다는, 데이터 흐름과 구조를 분석해서 근본적인 해결책을 찾으려고 해요. 슬로우 쿼리를 분석해서 인덱스를 추가하거나 쿼리 로직을 개선하고, API 구조를 리팩토링해서 불필요한 DB 호출을 줄이는 식으로 실제 서비스 응답 속도를 크게 개선한 경험이 있습니다.",

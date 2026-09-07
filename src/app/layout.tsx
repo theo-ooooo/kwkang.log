@@ -13,15 +13,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(DOMAIN_URL),
   title: {
     template: "%s | kwkang.log",
-    default: "강경원 — Backend Developer | kwkang.log",
+    default: `${profile.name} — ${profile.role} | kwkang.log`,
   },
-  description: "백엔드 개발자 강경원의 소개, 경력과 프로젝트. 기술 기록은 백틱에서 만나요.",
+  description: "풀스택 개발자 강경원의 소개, 경력과 프로젝트. 기술 기록은 백틱에서 만나요.",
   other: {
     ["naver-site-verification"]: "4aa506f808f61858b1492263f589d1148039bbfb",
   },
   openGraph: {
-    title: "강경원 — Backend Developer | kwkang.log",
-    description: "백엔드 개발자 강경원의 소개, 경력과 프로젝트",
+    title: `${profile.name} — ${profile.role} | kwkang.log`,
+    description: "풀스택 개발자 강경원의 소개, 경력과 프로젝트",
     url: "https://kwkang.net",
     siteName: "kwkang.log",
     images: [

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { FiArrowUpRight, FiGithub, FiMail } from "react-icons/fi";
 import profile from "@/data/profile.json";
 import { BACKTICK_PROFILE_URL } from "@/constants/common";
@@ -9,7 +10,7 @@ import Introduction from "@/components/profile/Introduction";
 
 export const metadata: Metadata = {
   title: "프로필 — 강경원",
-  description: "백엔드 개발자 강경원의 소개, 경력, 기술 스택과 프로젝트",
+  description: "풀스택 개발자 강경원의 소개, 경력, 기술 스택과 프로젝트",
 };
 
 function SectionHeading({ id, number, children }: { id: string; number: string; children: ReactNode }) {
@@ -17,13 +18,13 @@ function SectionHeading({ id, number, children }: { id: string; number: string; 
 }
 
 export default function ProfilePage() {
-  const { name, nameEn, birthDate, role, description, links } = profile;
+  const { name, nameEn, birthDate, imageSrc, role, description, links } = profile;
 
   return (
     <div className="profile-page">
       <div className="profile-masthead">
         <div className="profile-identity">
-          <span className="profile-monogram" aria-hidden="true">Kw</span>
+          <Image src={imageSrc} alt={`${name} 프로필 사진`} width={112} height={112} sizes="(max-width: 380px) 72px, (max-width: 760px) 88px, 112px" className="profile-photo resume-photo" priority />
           <div>
             <p className="eyebrow">{nameEn}</p>
             <h1>{name}</h1>
