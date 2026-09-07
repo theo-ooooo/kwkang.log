@@ -1,54 +1,38 @@
 import Link from "next/link";
+import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
+import profile from "@/data/profile.json";
+import { BACKTICK_PROFILE_URL } from "@/constants/common";
 
 export const metadata = {
-  title: "kwkang.log — 백틱으로 이사했어요",
-  description: "블로그 글은 이제 백틱(backtick.blog)에서 만나요.",
+  title: "강경원 — Backend Developer",
+  description: "성능과 안정성으로 신뢰받는 백엔드 개발자 강경원. 프로필과 경력을 살펴보고, 기술 기록은 백틱에서 만나보세요.",
 };
 
 export default function Home() {
   return (
-    <div className='w-full py-10 sm:py-14'>
-      {/* 백틱 이사 안내 — 프로필 카드와 같은 디자인 언어 */}
-      <section className='overflow-hidden rounded-3xl border border-gray-100 bg-white dark:border-gray-800 dark:bg-gray-900'>
-        {/* 상단 배너 */}
-        <div className='h-24 bg-gradient-to-r from-indigo-500/90 to-violet-500/90' />
-
-        <div className='px-6 pb-8 sm:px-10'>
-          {/* 배너에 걸치는 백틱 타일 */}
-          <div className='-mt-9 flex h-[72px] w-[72px] items-center justify-center rounded-2xl bg-gray-900 font-mono text-3xl font-semibold text-[#e0533d] ring-4 ring-white dark:bg-gray-950 dark:ring-gray-900'>
-            `
-          </div>
-
-          <div className='mt-5'>
-            <span className='rounded-full bg-indigo-50 px-2.5 py-0.5 text-[11px] font-bold text-indigo-600 dark:bg-indigo-500/15 dark:text-indigo-300'>
-              공지
-            </span>
-            <h1 className='mt-3 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white'>
-              블로그가 <span className='text-[#e0533d]'>백틱</span>으로 이사했어요
-            </h1>
-            <p className='mt-2.5 max-w-[480px] text-sm leading-relaxed text-gray-500 dark:text-gray-400'>
-              여기 있던 글 전부와 새 글은 직접 만든 개발 블로그 플랫폼{" "}
-              <strong className='font-semibold text-gray-800 dark:text-gray-200'>backtick.blog</strong>
-              에서 볼 수 있어요. velog·기업 기술블로그 큐레이션과 AI 요약도 함께요.
-            </p>
-          </div>
-
-          <div className='mt-7 flex flex-col gap-2.5 sm:flex-row'>
-            <a
-              href='https://backtick.blog/@theo'
-              className='inline-flex items-center justify-center gap-1.5 rounded-full bg-gray-900 px-6 py-2.5 text-sm font-bold text-white transition hover:opacity-85 dark:bg-white dark:text-gray-900'
-            >
-              백틱에서 글 보기
-              <span aria-hidden>→</span>
-            </a>
-            <Link
-              href='/profile'
-              className='inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-2.5 text-sm font-bold text-gray-700 transition hover:border-gray-900 dark:border-gray-700 dark:text-gray-300 dark:hover:border-white'
-            >
-              프로필 보기
-            </Link>
-          </div>
+    <div className="home-layout">
+      <section className="home-introduction" aria-labelledby="home-title">
+        <p className="eyebrow">{profile.role}</p>
+        <h1 id="home-title">{profile.name}</h1>
+        <p className="home-name-en">{profile.nameEn}</p>
+        <p className="home-description">{profile.description.split(" · ")[0]}</p>
+        <p className="home-stack">Node.js · NestJS · PostgreSQL · Python</p>
+        <div className="button-row">
+          <Link href="/profile" className="button button-primary">프로필 보기 <FiArrowRight aria-hidden="true" /></Link>
+          <a href={profile.links.github} target="_blank" rel="noopener noreferrer" className="button button-secondary">
+            GitHub <FiArrowUpRight aria-hidden="true" />
+          </a>
         </div>
+      </section>
+      <section className="blog-panel" aria-labelledby="blog-title">
+        <p className="blog-label">WRITING · BACKTICK</p>
+        <div className="blog-panel-copy">
+          <h2 id="blog-title"><span>블로그는</span>{" "}<span>백틱에서</span></h2>
+          <p>기술 기록과 새로운 글을 만나보세요.</p>
+          <span className="blog-address">backtick.blog/@theo</span>
+        </div>
+        <a href={BACKTICK_PROFILE_URL} className="blog-link">백틱에서 글 보기 <FiArrowUpRight aria-hidden="true" /></a>
+        <span className="backtick-mark" aria-hidden="true">`/</span>
       </section>
     </div>
   );

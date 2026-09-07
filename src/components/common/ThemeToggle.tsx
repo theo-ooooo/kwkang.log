@@ -11,10 +11,12 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={handleTheme}
-      aria-label='테마 전환'
-      className='flex h-9 w-9 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white'
+      type="button"
+      aria-label={theme === Theme.light ? "다크 모드로 전환" : "라이트 모드로 전환"}
+      title={theme === Theme.light ? "다크 모드로 전환" : "라이트 모드로 전환"}
+      className="icon-button theme-toggle"
     >
-      {theme === Theme.light ? <FiSun size={18} /> : <FiMoon size={18} />}
+      {theme === Theme.light ? <FiSun size={20} aria-hidden="true" /> : <FiMoon size={20} aria-hidden="true" />}
     </button>
   );
 }

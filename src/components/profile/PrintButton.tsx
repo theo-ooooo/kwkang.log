@@ -1,21 +1,11 @@
 "use client";
 
-import { FaFilePdf } from "react-icons/fa";
+import { FiPrinter } from "react-icons/fi";
 
 export default function PrintButton() {
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
-    <button
-      onClick={handlePrint}
-      className="fixed bottom-8 left-8 z-50 flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all print:hidden"
-      aria-label="PDF로 저장"
-    >
-      <FaFilePdf size={18} />
-      <span className="font-medium">PDF 저장</span>
+    <button type="button" onClick={() => window.print()} className="button button-secondary print-button">
+      <FiPrinter size={16} aria-hidden="true" /> 이력서 인쇄
     </button>
   );
 }
-
