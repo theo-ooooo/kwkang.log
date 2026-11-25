@@ -1,0 +1,89 @@
+/* 이력서: 홈과 같은 글꼴, 색. 화면에서는 종이 한 장, 인쇄하면 A4 */
+.rs {
+  --rs-ground: #eef2f9;
+  --rs-sheet: #ffffff;
+  --rs-ink: #151821;
+  --rs-text: #3b4252;
+  --rs-muted: #6a7385;
+  --rs-line: #e2e7f0;
+  --rs-blue: #2453ff;
+  --rs-blue-soft: #eaf0ff;
+  min-height: 100svh;
+  background: var(--rs-ground);
+  color: var(--rs-text);
+  padding: 32px 24px 64px;
+}
+.dark .rs {
+  --rs-ground: #0c1018;
+  --rs-sheet: #151b26;
+  --rs-ink: #f1f4fa;
+  --rs-text: #c4ccda;
+  --rs-muted: #93a0b6;
+  --rs-line: #263043;
+  --rs-blue: #7f9cff;
+  --rs-blue-soft: #1c2643;
+}
+.rs h1, .rs h2, .rs h3, .rs p, .rs li, .rs dd { word-break: keep-all; overflow-wrap: break-word; }
+
+.rs-bar { max-width: 860px; margin: 0 auto 16px; display: flex; justify-content: space-between; gap: 12px; }
+.rs-btn { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; padding: 0 18px; border-radius: 12px; border: 1px solid var(--rs-line); background: var(--rs-sheet); color: var(--rs-ink); font-size: .92rem; font-weight: 600; cursor: pointer; }
+.rs-btn:hover { border-color: var(--rs-blue); color: var(--rs-blue); }
+.rs .rs-btn-primary { background: var(--rs-blue); border-color: var(--rs-blue); color: #fff; }
+.rs .rs-btn-primary:hover { color: #fff; filter: brightness(1.08); }
+
+.rs-sheet { max-width: 860px; margin: 0 auto; background: var(--rs-sheet); border-radius: 24px; padding: 56px 60px; box-shadow: 0 1px 2px rgb(16 24 40 / 4%), 0 8px 24px rgb(16 24 40 / 5%); outline: none; }
+.dark .rs-sheet { box-shadow: none; }
+.rs a { color: var(--rs-blue); }
+
+.rs-head { display: flex; gap: 28px; align-items: center; padding-bottom: 32px; border-bottom: 2px solid var(--rs-ink); }
+.rs-photo { width: 96px; height: 96px; border-radius: 22px; object-fit: cover; flex: 0 0 auto; }
+.rs-id h1 { margin: 0; font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; color: var(--rs-ink); }
+.rs-id h1 span { margin-left: 6px; font-size: 1rem; font-weight: 500; color: var(--rs-muted); letter-spacing: 0; }
+.rs-role { margin: 4px 0 0; font-size: 1rem; color: var(--rs-blue); font-weight: 600; }
+.rs-contact { margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .9rem; color: var(--rs-muted); }
+
+.rs-section { padding-top: 32px; }
+.rs-section h2 { margin: 0 0 18px; font-size: 1.15rem; font-weight: 700; color: var(--rs-ink); letter-spacing: -0.02em; }
+.rs-intro p { margin: 0 0 10px; font-size: .95rem; line-height: 1.8; }
+
+.rs-item { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 24px; padding: 16px 0; border-top: 1px solid var(--rs-line); break-inside: avoid; }
+.rs-item:first-of-type { border-top: 0; padding-top: 0; }
+.rs-period { margin: 2px 0 0; font-size: .88rem; color: var(--rs-muted); font-variant-numeric: tabular-nums; }
+.rs-item h3 { margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--rs-ink); }
+.rs-item h3 span { margin-left: 8px; font-size: .88rem; font-weight: 500; color: var(--rs-muted); }
+.rs-tags { margin: 4px 0 0; font-size: .85rem; color: var(--rs-blue); }
+.rs-item ul { margin: 8px 0 0; padding-left: 18px; list-style: disc; display: grid; gap: 4px; font-size: .92rem; line-height: 1.7; }
+.rs-item li::marker { color: var(--rs-blue); }
+.rs-link, .rs-note { margin: 6px 0 0; font-size: .88rem; color: var(--rs-muted); }
+
+.rs-skills { margin: 0; display: grid; gap: 10px; }
+.rs-skills div { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 24px; font-size: .92rem; }
+.rs-skills dt { font-weight: 600; color: var(--rs-ink); }
+.rs-skills dd { margin: 0; line-height: 1.7; }
+
+@media (max-width: 720px) {
+  .rs { padding: 16px 12px 40px; }
+  .rs-sheet { padding: 28px 22px; border-radius: 20px; }
+  .rs-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .rs-item, .rs-skills div { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}
+
+@media print {
+  @page { size: A4; margin: 14mm 15mm; }
+  html, body { background: #fff !important; }
+  .rs, .dark .rs {
+    --rs-sheet: #fff; --rs-ink: #111; --rs-text: #222; --rs-muted: #555; --rs-line: #ddd; --rs-blue: #1a3fd6;
+    background: #fff; padding: 0; color: #222; font-size: 9.5pt;
+  }
+  .rs-bar, .top-button, .skip-link { display: none !important; }
+  .rs-sheet { max-width: none; padding: 0; border-radius: 0; box-shadow: none; }
+  .rs-head { padding-bottom: 14pt; }
+  .rs-photo { width: 64pt; height: 64pt; border-radius: 12pt; }
+  .rs-id h1 { font-size: 20pt; }
+  .rs-section { padding-top: 14pt; }
+  .rs-section h2 { font-size: 12pt; margin-bottom: 8pt; break-after: avoid; }
+  .rs-item { padding: 8pt 0; gap: 14pt; grid-template-columns: 100pt minmax(0, 1fr); }
+  .rs-skills div { grid-template-columns: 100pt minmax(0, 1fr); gap: 14pt; }
+  .rs-intro p, .rs-item ul, .rs-skills div { font-size: 9.5pt; line-height: 1.55; }
+  .rs a { color: inherit; text-decoration: none; }
+}
