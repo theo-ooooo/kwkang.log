@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/common/Footer";
-import Header from "@/components/common/Header";
 import TopButton from "@/components/common/Top";
 import ThemeProvider from "@/components/providers/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
@@ -44,14 +42,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko' suppressHydrationWarning>
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+      </head>
       <body>
         <ThemeProvider>
           <a href="#main-content" className="skip-link">본문으로 건너뛰기</a>
-          <div className="site-frame">
-            <Header githubUrl={profile.links.github} />
-            <main id="main-content" className="site-main site-container" tabIndex={-1}>{children}</main>
-            <Footer />
-          </div>
+          {children}
           <TopButton />
         </ThemeProvider>
         <Analytics />
